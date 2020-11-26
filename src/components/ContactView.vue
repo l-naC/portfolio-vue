@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen h-screen bg-gray-800 flex items-center justify-center flex-col">
-        <h3 class="my-3">Une idée ? Un projet ? N'hésitez pas à me contacter</h3>
+        <h3 class="my-3 text-white">Une idée ? Un projet ? N'hésitez pas à me contacter</h3>
         <p v-if="errors.length">
             <b>Please correct the following error(s):</b>
             <ul>
