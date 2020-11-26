@@ -1,0 +1,112 @@
+{
+  "name": "Portfolio",
+  "projects": [
+    {
+      "name": "Resonance",
+      "role": "Developer frontend",
+      "client": "IESA Multimedia",
+      "url": "http://asso-resonance.surge.sh/",
+      "description": "Association qui a pour but l'insertion des handipés psychique en entreprise.",
+      "photo": "https://i.ibb.co/D4C6yKf/resonance.jpg",
+      "date": "2018"
+    },
+    {
+      "name": "Cabinet chiropractique",
+      "role": "Developer fullstack",
+      "client": "Laetitia TAN",
+      "url": "https://chiropratique-tan.fr/",
+      "description": "Site vitrine pour un cabinet chiropratique",
+      "photo": "https://i.ibb.co/6v0H8KM/image-cabinet-chiro.jpg",
+      "date": "2019"
+    },
+    {
+      "name": "Nyl",
+      "role": "Developer fullstack",
+      "client": "IESA Multimedia",
+      "url": "https://nylproduct.lenaclavier.com/",
+      "description": "La seule et l’unique bibliothèque de vinyle intelligente",
+      "photo": "https://i.ibb.co/XLLtMby/nylproduct.jpg",
+      "date": "2019"
+    },
+    {
+      "name": "Helfe",
+      "role": "Developer frontend",
+      "client": "IIM",
+      "url": "https://helfe.lenaclavier.com/",
+      "description": "Landing de l'application Helfe",
+      "photo": "https://i.ibb.co/DCwphsJ/helfe.jpg",
+      "date": "2020"
+    }
+  ],
+  "formations": [
+    {
+      "name": "Formation relation-clientèle",
+      "place": "Orange 75012 Paris",
+      "date": "Juin 2016"
+    },
+    {
+      "name": "DUT MMI (Métier du multimédia et de l'internet)",
+      "place": "IUT de Meaux 77100 Meaux",
+      "date": "2016-2018"
+    },
+    {
+      "name": "Bachelor chef de projet digital, spécialisation developement web",
+      "place": "IESA Multimédia 75011 Paris",
+      "date": "2018-2019"
+    },
+    {
+      "name": "Mastère Management de la communication, spécialisation Ingénierie web et mobile",
+      "place": "IIM - Institut de l'internet et du multimédia 92060 Paris La Défense",
+      "date": "2019-2021"
+    }
+  ],
+  "experiences": [
+    {
+      "name": "Technicienne de surface, stage dans le cadre de ma formation",
+      "place": "Mikazuki Hotel, Katsu-ura (Japon)",
+      "date": "Août 2017"
+    },
+    {
+      "name": "Stage en tant que développeuse Full-stack",
+      "place": "GAD Delta",
+      "date": "Avril - Juin 2018"
+    },
+    {
+      "name": "Développeuse Full-stack en alternance",
+      "place": "GAD Delta",
+      "date": "2018 - 2019"
+    },
+    {
+      "name": "Assistante chef de projet digital (Pôle Premium)",
+      "place": "Prisma Media",
+      "date": "2019 - 2020"
+    },
+    {
+      "name": "Product owner junior (Pôle Premium)",
+      "place": "Prisma Media",
+      "date": "2020 - 2021"
+    }
+  ],
+  "skills": [
+  	{
+    	"name": "Développement web",
+        "description" : "Pour la réalisation d'un site ou une application, j'ai au cours des années appris de nombreux langages et frameworks web. Vous pouvez les retrouver ci-dessous séparer en 2 catégories.",
+        "outils" : ["Html","Css","Javascrip","Jquery","Bootstrap","React","JSON","Php","MySQL", "Ajax", "CakePHP", "Symphony"]
+    },
+    {
+    	"name": "Gestion de projet",
+        "description" : "Pouvoir élaborer un projet et voir son évolution, c'est ce que j'ai appris à aimer lors de mes études. Pour cela j'ai dû apprendre à utiliser certains outils pour m'aider. Mais j'ai aussi à apprendre à rédiger de nombreux documents qui sont importants à mettre en place lors du lancement d'un projet. Que ce soit en méthode agile ou bien en méthode en V, j'ai déja participé à des projets utilisant ces deux méthodes.",
+        "outils" : ["Trello","Asana","SuiteOffice","SuiteGoogle","Jira"]
+    },
+    {
+    	"name": "Communication",
+        "description" : "Lors d'un projet la communication est un point très important. Pour cela j'ai dî acquérir des compétences en graphisme mais aussi sur les socials médias.",
+        "outils" : ["Photoshop", "Indesign", "Illustrator", "After Effect", "Première Pro"]
+    },
+    {
+    	"name": "UX/UI design",
+        "description" : "Lors de la création d'un site ou bien d'une application, l'expérience utilisateur à une place importante car sans cela le projet pourrait ne pas fonctionner.",
+        "outils" : ["Zeplin", "Figma", "Sketch"]
+    }
+  ]
+}
