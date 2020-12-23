@@ -1,9 +1,14 @@
 <template>
-    <div class="w-screen h-screen bg-bluenight flex items-center justify-center flex-col text-white" id="view">
+    <div class="fond w-screen h-screen flex items-center justify-center flex-col text-white" id="view">
         <canvas class="text-center"  id="canvas"></canvas>
-        <div class="text-center text-white absolute">
-            <h1 class="uppercase text-5xl font-black">Lena Clavier</h1>
-            <h2 class="text-3xl font-light">Développeur web et Chef de projet digital</h2>
+        <div class="text-left text-white absolute m-4">
+            <h1 class="uppercase font-mine text-4xl sm:text-4xl md:text-6xl lg:text-6xl">Lena Clavier</h1>
+            <h2 class="font-mineBold text-2xl sm:text-2xl md:text-4xl lg:text-4xl">Développeur web et Chef de projet digital</h2>
+        </div>
+        <div class="absolute bottom-0 mb-5">
+            <a href="#about">
+                <img src="../assets/images/arrow.svg" alt="arrow">
+            </a>
         </div>
     </div> 
 </template>
@@ -108,7 +113,7 @@ export default {
         }
 
         function connect() {
-            let opacityValue= 1
+            //let opacityValue= 1
             for(let a= 0; a < particleArray.length; a++) {
                 for (let b = a; b < particleArray.length; b++) {
                     let distance = ((particleArray[a].x - particleArray[b].x) *
@@ -116,8 +121,8 @@ export default {
                     (particleArray[a].y - particleArray[b].y) *
                     (particleArray[a].y - particleArray[b].y) )
                     if (distance < (canvas.width/7)*(canvas.height/7)) {
-                        opacityValue = 1 - (distance/20000)
-                        ctx.strokeStyle = 'rgba(229, 192, 79,' + opacityValue + ')'
+                        //opacityValue = 1 - (distance/20000)
+                        ctx.strokeStyle = 'rgba(255, 255, 255,0.2)'// + opacityValue + ')'
                         ctx.lineWidth = 1
                         ctx.beginPath()
                         ctx.moveTo(particleArray[a].x, particleArray[a].y)
@@ -145,10 +150,14 @@ export default {
         )
         init()
         animate()
-    },
+    }
 }
 </script>
 
 <style scoped>
-
+    .fond  {
+        background-image: url('../assets/images/fond.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 </style>

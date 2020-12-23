@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Philosopher-Bold";
+    src: url("../fonts/philosopher/Philosopher-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Philosopher-Regular";
+    src: url("../fonts/philosopher/Philosopher-Regular.ttf") format("ttf");
+}
