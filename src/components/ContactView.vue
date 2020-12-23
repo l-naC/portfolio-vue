@@ -1,9 +1,9 @@
 <template>
-    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-evenly flex-col sm:flex-col md:flex-row lg:flex-row">
-        <div class="w-1/2">
+    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-evenly flex-col sm:flex-col md:flex-row lg:flex-row" id="section-contact">
+        <div class="w-1/2" id="image-contact">
             <img class="m-auto" src="../assets/images/ie.png" alt="ie">
         </div>
-        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 flex items-center flex-col">
+        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 flex items-center flex-col" id="form-contact">
             <h3 class="my-3 text-center">Une idée ? Un projet ? N'hésitez pas à me contacter</h3>
             <p v-if="errors.length">
                 <b>Please correct the following error(s):</b>

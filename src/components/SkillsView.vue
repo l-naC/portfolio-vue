@@ -1,21 +1,19 @@
 <template>
-    <div class="w-screen h-screen flex items-center justify-center text-center">
+    <div class="w-screen h-screen flex items-center justify-center text-center" id="section-skills">
         <div class="w-full">
-           
-            
             <div class="flex flex-row items-center">
-                 <h2 class="font-bold m-0 cursor-pointer title uppercase text-redjapan text-6xl sm:text-6xl md:text-8xl lg:text-8xl font-mineBold hover:text-black" v-on:click="all()">Skills</h2>
+                 <h2 class="font-bold m-0 cursor-pointer title-skills uppercase text-redjapan text-6xl sm:text-6xl md:text-8xl lg:text-8xl font-mineBold hover:text-black" v-on:click="all()">Skills</h2>
                 <div class="w-1/5 flex flex-col content-center justify-evenly flex-wrap my-5">
-                    <div v-for="(skill, index) in skillsData" :key="index">
+                    <div class="card-skills" v-for="(skill, index) in skillsData" :key="index">
                         <div @mouseover="hoverIn(index)" @mouseout="hoverOut(index)" class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
                             <p v-if="hover && indexSkill==index" class="card-text-default">{{ skill.name }}</p>
                             <img class="w-1/3" v-else :src="skill.icon" alt="icon">
                         </div>
                     </div>
                 </div>
-                <div class="w-4/5">
+                <div id="infos-skills" class="w-4/5">
                     <div class="w-4/5 flex flex-wrap justify-center m-auto" v-if="isDisplay">
-                        <p class="w-full font-thin text-xs m-5">{{array.description}}</p>
+                        <p class="w-full font-thin text-xs sm:text-xs md:text-lg lg:text-lg m-5">{{array.description}}</p>
                         <span v-for="item in array.outils" :key="item" class="transition duration-500 ease-in-out p-3" :style="textStyle">
                             {{ item }}
                         </span>
@@ -84,7 +82,7 @@ export default {
 </script>
 
 <style scoped>
-    .title{
+    .title-skills{
         writing-mode: vertical-rl;
         text-orientation: upright;
     }
