@@ -5,11 +5,11 @@
             <h1 class="uppercase font-mine text-4xl sm:text-4xl md:text-6xl lg:text-6xl">Lena Clavier</h1>
             <h2 class="font-mineBold text-2xl sm:text-2xl md:text-4xl lg:text-4xl">Développeur web et Chef de projet digital</h2>
         </div>
-        <div class="absolute bottom-0 mb-5">
+        <!-- <div class="absolute bottom-0 mb-5">
             <a href="#about">
                 <img src="../assets/images/arrow.svg" alt="arrow">
             </a>
-        </div>
+        </div> -->
     </div> 
 </template>
 
