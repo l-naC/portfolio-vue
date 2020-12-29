@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen flex items-center justify-evenly p-5 flex-col sm:flex-col md:flex-row lg:flex-row" id="section-about">
+    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-evenly p-5 flex-col sm:flex-col md:flex-row lg:flex-row" id="section-about">
         <div class="w-full sm:w-full md:w-1/2 lg:w-1/2" id="text-about">
             <h2 class="font-mineBold text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h2>
             <p>Ayant découvert le développement web lors de mon cursus à l’université.</p>
