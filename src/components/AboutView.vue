@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-evenly p-5 flex-col" id="section-about">
+    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-evenly flex-col" id="section-about">
         <div class="flex items-center justify-evenly p-5 flex-col sm:flex-col md:flex-row lg:flex-row">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2" id="text-about">
                 <h2 class="font-mineBold text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h2>
@@ -15,9 +15,9 @@
                     <br/><br/>
                     Et comme vous pourrez le voir, je suis aussi une personne passionnée par le Japon et sa culture.
                 </p>
-                <div class="text-center my-5">
-                    <button class="bg-black text-white p-1 rounded-lg">Download my CV</button>
-                </div>
+                <!-- <div class="text-center my-5">
+                    <button class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Download my CV</button>
+                </div> -->
             </div>
             <div id="image-about">
                 <img src="../assets/images/torii.png" alt="torii">
@@ -45,14 +45,14 @@
                 </div>
             </div> -->
         </div>
-        <div class="w-full text-center">
+        <div class="w-full text-center italic h-1/4 fond p-5 mt-3 mb-8 md:mb-3 lg:mb-3">
             <p 
-            class="text-2xl italic" 
+            class="text-2xl"
             v-on:mouseover="mouseover"
             v-on:mouseleave="mouseleave">
             " {{message}} "
-        </p>
-            <p class="text-xs">(proverbe japonais)</p>
+            </p>
+            <p class="text-xs mb-2">(proverbe japonais)</p>
         </div>
     </div>
     
@@ -95,4 +95,11 @@ export default {
     #text-about p{
         @apply text-base my-4
     }
-</style>>
+
+    .fond  {
+        background-image: url('../assets/images/wave.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+</style>

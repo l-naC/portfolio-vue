@@ -13,7 +13,7 @@
           
 
           <div class="text-center my-5">
-            <a v-bind:href="linkWebsite" class="bg-gray-300 rounded-full py-3 px-6 text-gray-600">Visit website</a>
+            <a v-bind:href="linkWebsite" class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Visit website</a>
           </div>
         </div>
         

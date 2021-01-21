@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     startAnimations: function () {
-  
+
       ScrollTrigger.matchMedia({
 	
         // desktop
@@ -130,7 +130,7 @@ export default {
 
           // add animations and labels to the timeline
           tl_contact.from('#image-contact', {x: -200, y: 500, opacity: 0, duration: 1.5})
-            .from('#form-contact', {y: 500, opacity: 0, duration: 1}, "-=1")
+            .from('#form-contact', {x: -200, y: 500, opacity: 0, duration: 1}, "-=1")
         },
         
         // all 

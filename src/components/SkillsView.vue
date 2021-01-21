@@ -2,7 +2,7 @@
     <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-center text-center" id="section-skills">
         <div class="w-full">
             <div class="flex flex-row items-center">
-                 <h2 class="font-bold m-0 cursor-pointer title-skills uppercase text-redjapan text-6xl sm:text-6xl md:text-8xl lg:text-8xl font-mineBold hover:text-black" v-on:click="all()">Skills</h2>
+                <h2 class="font-bold m-0 cursor-pointer title-skills uppercase text-redjapan text-6xl sm:text-6xl md:text-8xl lg:text-8xl font-mineBold hover:text-black" v-on:click="all()">Skills</h2>
                 <div class="w-1/5 flex flex-col content-center justify-evenly flex-wrap my-5">
                     <div class="card-skills" v-for="(skill, index) in skillsData" :key="index">
                         <div @mouseover="hoverIn(index)" @mouseout="hoverOut(index)" class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
@@ -27,8 +27,6 @@
                     </div>
                 </div>
             </div>
-            
-                
         </div>
     </div>
 </template>
@@ -86,8 +84,9 @@ export default {
         writing-mode: vertical-rl;
         text-orientation: upright;
     }
+
     .card-default {
-        @apply w-16 h-16 sm:w-16 sm:h-16 md:w-28 md:h-28 lg:w-28 lg:w-28 rounded-full bg-gray-200 shadow-2xl flex items-center justify-center hover:bg-redjapan hover:text-white 
+        @apply w-16 h-16 sm:w-16 sm:h-16 md:w-28 md:h-28 lg:w-28 lg:w-28 rounded-full bg-gray-200 shadow-2xl flex items-center justify-center hover:bg-redjapan hover:text-white
     }
 
     .card-text-default {
@@ -95,7 +94,7 @@ export default {
     }
 
     span{
-        @apply font-bold 
+        @apply font-bold
     }
 
     span:nth-child(2n) {
