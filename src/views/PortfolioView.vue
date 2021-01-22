@@ -11,6 +11,7 @@
 </template>
 
 <script>
+
 import AboutView from '../components/AboutView.vue'
 import ContactView from '../components/ContactView.vue'
 import FooterView from '../components/FooterView.vue'
