@@ -16,12 +16,12 @@
                     <div class="px-4 py-5 sm:p-6">
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6">
-                                <label for="first_name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <label for="first_name" class="block text-sm font-medium text-gray-700">Nom</label>
                                 <input type="text" id="name" name="name" v-model="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md">
                             </div>
 
                             <div class="col-span-6">
-                                <label for="email_address" class="block text-sm font-medium text-gray-700">Email address</label>
+                                <label for="email_address" class="block text-sm font-medium text-gray-700">Adresse email</label>
                                 <input type="text" id="email_address" name="email" v-model="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md" placeholder="you@example.com">
                             </div>
 

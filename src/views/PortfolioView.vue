@@ -35,61 +35,66 @@ export default {
       FooterView,
       NavBar
   },
+  mounted: function () {
+    this.startAnimations()
+  },
   methods: {
     startAnimations: function () {
-
+      
       ScrollTrigger.matchMedia({
 	
-        // desktop
-        // "(min-width: 800px)": function() {
-        //   // setup animations and ScrollTriggers for screens 800px wide or greater (desktop) here...
-        //   // These ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
+        //desktop
+        "(min-width: 800px)": function() {
+          // setup animations and ScrollTriggers for screens 800px wide or greater (desktop) here...
+          // These ScrollTriggers will be reverted/killed when the media query doesn't match anymore.
 
-        //   let tl_about = gsap.timeline({
-        //     // yes, we can add it to an entire timeline!
-        //     scrollTrigger: {
-        //       trigger: "#section-about",
-        //       toggleActions: "restart pause resume pause",
-        //       start: "center bottom",
-        //       end: "center top"
-        //     }
-        //   })
+          // let tl_about = gsap.timeline({
+          //   // yes, we can add it to an entire timeline!
+          //   scrollTrigger: {
+          //     trigger: "#section-about",
+          //     toggleActions: "restart pause resume pause",
+          //     start: "center bottom",
+          //     end: "center top",
+          //     markers: true
+          //   }
+          // })
 
-        //   // add animations and labels to the timeline
-        //   tl_about.from('#image-about', {x: 50, opacity: 0, duration: 1.5})
-        //     .from('#text-about', {x: -50, opacity: 0, duration: 1}, "-=1")
+          // // add animations and labels to the timeline
+          // tl_about.from('#image-about', {x: 50, opacity: 0, duration: 1.5})
+          //   .from('#text-about', {x: -50, opacity: 0, duration: 1}, "-=1")
 
-        //   let tl_skills = gsap.timeline({
-        //     // yes, we can add it to an entire timeline!
-        //     scrollTrigger: {
-        //       trigger: "#section-skills",
-        //       toggleActions: "restart pause resume pause",
-        //       start: "center bottom",
-        //       end: "center top"
-        //     }
-        //   });
+          // let tl_skills = gsap.timeline({
+          //   // yes, we can add it to an entire timeline!
+          //   scrollTrigger: {
+          //     trigger: "#section-skills",
+          //     toggleActions: "restart pause resume pause",
+          //     start: "center bottom",
+          //     end: "center top",
+          //     markers: true
+          //   }
+          // });
 
-        //   // add animations and labels to the timeline
-        //   tl_skills.from('.title-skills', {x: -300, y: -200, opacity: 0, duration: 1})
-        //     .from('.card-skills', {x: -300, rotation: 360, duration: 1}, "-=1")
-        //     .from('#infos-skills', {x: 300, y: 300, opacity: 0, duration: 1}, "-=1")
+          // //add animations and labels to the timeline
+          // tl_skills.from('.title-skills', {x: -300, y: -200, opacity: 0, duration: 1})
+          //   .from('.card-skills', {x: -300, rotation: 360, duration: 1}, "-=1")
+          //   .from('#infos-skills', {x: 300, y: 300, opacity: 0, duration: 1}, "-=1")
 
-        //   let tl_contact = gsap.timeline({
-        //     // yes, we can add it to an entire timeline!
-        //     scrollTrigger: {
-        //       trigger: "#section-contact",
-        //       toggleActions: "restart pause resume pause",
-        //       start: "center bottom",
-        //       end: "center top"
-        //     }
-        //   })
+          // let tl_contact = gsap.timeline({
+          //   // yes, we can add it to an entire timeline!
+          //   scrollTrigger: {
+          //     trigger: "#section-contact",
+          //     toggleActions: "restart pause resume pause",
+          //     start: "center bottom",
+          //     end: "center top"
+          //   }
+          // })
 
-        //   // add animations and labels to the timeline
-        //   tl_contact.from('#image-contact', {x: -200, y: 500, opacity: 0, duration: 1.5})
-        //     .from('#form-contact', {x:200, y: 500, opacity: 0, duration: 1}, "-=1")
-        // },
+          // // add animations and labels to the timeline
+          // tl_contact.from('#image-contact', {x: -200, y: 500, opacity: 0, duration: 1.5})
+          //   .from('#form-contact', {x:200, y: 500, opacity: 0, duration: 1}, "-=1")
+        },
 
-        // // mobile
+        // mobile
         // "(max-width: 799px)": function() {
         //   let tl_about = gsap.timeline({
         //     // yes, we can add it to an entire timeline!
