@@ -19,7 +19,7 @@
                     <button class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Download my CV</button>
                 </div> -->
             </div>
-            <div id="image-about" class="flex md:block lg:block justify-center mt-7 md:mt-0 lg:mt-0">
+            <div id="image-about" class="flex md:block lg:block justify-center">
                 <img class="w-1/2 md:w-full lg:w-full" src="../assets/images/torii.png" alt="torii">
             </div>
             <!-- <div class="flex justify-evenly flex-wrap">
@@ -45,7 +45,7 @@
                 </div>
             </div> -->
         </div>
-        <div class="w-full text-center italic h-1/4 fond p-5 mt-3 mb-8 md:mb-3 lg:mb-3">
+        <div class="w-full text-center italic h-1/4 fond p-5 mb-8 md:mb-3 lg:mb-3">
             <h3 
             class="text-2xl"
             v-on:mouseover="mouseover"

@@ -9,3 +9,34 @@ body{
 h1, h2, h3{
     font-family: 'Philosopher', sans-serif;
 }
+
+@media(orientation : landscape) {
+
+    #section-about{
+    }
+    #section-about div, #section-contact {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    #text-about {
+        padding-left: 15px !important;
+    }
+
+    #section-about div:last-child{
+        margin: 0;
+    }
+
+    .title-skills{
+        font-size: 3rem !important;
+    }
+
+    #button{
+        padding: 5px;
+    }
+
+    #container-form{
+        padding: 15px;
+    }
+
+}

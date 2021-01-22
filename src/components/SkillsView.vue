@@ -100,10 +100,10 @@ export default {
     }
 
     span{
-        @apply font-bold
+        @apply font-bold text-sm md:text-base lg:text-base
     }
 
     span:nth-child(2n) {
-        @apply text-base sm:text-base md:text-2xl lg:text-3xl
+        @apply text-xs md:text-2xl lg:text-3xl 
     }
 </style>

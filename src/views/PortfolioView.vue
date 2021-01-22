@@ -154,6 +154,7 @@ export default {
 </script>
 
 <style scoped>
+
 #snap-scroll-container{
   display: block;
   overflow-y: scroll;

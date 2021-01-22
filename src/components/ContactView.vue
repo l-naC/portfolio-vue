@@ -4,16 +4,16 @@
             <img class="m-auto" src="../assets/images/ie.png" alt="ie">
         </div>
         <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 flex items-center flex-col" id="form-contact">
-            <h3 class="my-3 text-center">Une idée ? Un projet ? N'hésitez pas à me contacter</h3>
-            <p v-if="errors.length">
-                <b>Please correct the following error(s):</b>
-                <ul>
+            <h3 class="my-3 text-center text-sm md:text-base lg:text-base">Une idée ? Un projet ? N'hésitez pas à me contacter</h3>
+            <p class="text-xs" v-if="errors.length">
+                <b>S'il vous plaît corrigez les informations suivantes</b>
+                <ul class="flex">
                     <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
                 </ul>
             </p>
-            <form class="w-4/5 shadow-2xl bg-white rounded-lg my-5" @submit.prevent="sendEmail" novalidate="true">
+            <form class="w-4/5 shadow-2xl bg-white rounded-lg my-0 md:my-5 lg:my-5" @submit.prevent="sendEmail" novalidate="true">
                 <div class="sm:rounded-md">
-                    <div class="px-4 py-5 sm:p-6">
+                    <div class="p-5 md:p-2 lg:p-2" id="container-form">
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6">
                                 <label for="first_name" class="block text-sm font-medium text-gray-700">Nom</label>
@@ -36,8 +36,8 @@
                         </div>
                     </div>
                     <p class="text-xs text-center font-thin" :class="healthStyle">{{ alert }}</p>
-                    <div class="px-4 py-3 text-right sm:px-6">
-                        <button type="submit" class="inline-flex justify-center border border-transparent shadow-sm text-sm font-medium bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white focus:outline-none">
+                    <div class="px-4 py-3 text-right sm:px-6" id="button">
+                        <button type="submit" class="inline-flex justify-center border border-transparent shadow-sm font-medium bg-black hover:bg-gray-500 rounded-full py-3 px-3 md:px-6 lg:px-6 text-xs md:text-sm lg:text-sm text-white focus:outline-none">
                             Envoyer
                         </button>
                     </div>
@@ -71,15 +71,15 @@ export default {
         sendEmail(e){
             this.errors = []
             if (!this.name) {
-                this.errors.push("Name required.");
+                this.errors.push("Nom requis ");
             }
             if (!this.email) {
-                this.errors.push('Email required.');
+                this.errors.push('email requis ');
             } else if (!this.validEmail(this.email)) {
-                this.errors.push('Valid email required.');
+                this.errors.push('Adresse email valide ');
             }
             if (!this.message) {
-                this.errors.push("Message required.");
+                this.errors.push("Message requis ");
             }
 
             if (!this.errors.length) {
@@ -106,27 +106,5 @@ export default {
 </script>
 
 <style>
-.demo {
-  font-family: sans-serif;
-  border: 1px solid #eee;
-  border-radius: 2px;
-  padding: 20px 30px;
-  margin-top: 1em;
-  margin-bottom: 40px;
-  user-select: none;
-  overflow-x: auto;
-}
-
-.form-item {
-  margin: 1em auto;
-}
-
-.form-item label {
-  display: block;
-}
-
-button {
-  font-size: 1em;
-}
 
 </style>
