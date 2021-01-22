@@ -4,7 +4,13 @@
             <div class="flex flex-row items-center">
                 <h2 class="font-bold m-0 cursor-pointer title-skills uppercase text-redjapan text-6xl sm:text-6xl md:text-8xl lg:text-8xl font-mineBold hover:text-black" v-on:click="all()">Skills</h2>
                 <div class="w-1/5 flex flex-col content-center justify-evenly flex-wrap my-5">
-                    <div class="card-skills" v-for="(skill, index) in skillsData" :key="index">
+                    <div class="card-skills block md:hidden lg:hidden" v-for="(skill, index) in skillsData" :key="index">
+                        <div class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
+                            <p v-if="hover && indexSkill==index" class="card-text-default">{{ skill.name }}</p>
+                            <img class="w-1/3" v-else :src="skill.icon" alt="icon">
+                        </div>
+                    </div>
+                    <div class="card-skills hidden md:block lg:block" v-for="(skill, index) in skillsData" :key="index">
                         <div @mouseover="hoverIn(index)" @mouseout="hoverOut(index)" class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
                             <p v-if="hover && indexSkill==index" class="card-text-default">{{ skill.name }}</p>
                             <img class="w-1/3" v-else :src="skill.icon" alt="icon">

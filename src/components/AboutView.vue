@@ -97,7 +97,7 @@ export default {
     }
 
     .fond  {
-        background-image: url('../assets/images/wave.svg');
+        background-image: url('../assets/images/svg/wave.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: bottom;

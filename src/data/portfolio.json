@@ -90,7 +90,7 @@
   "skills": [
   	{
       "name": "Développement web",
-      "icon": "https://zupimages.net/up/20/52/sj71.png",
+      "icon": "https://zupimages.net/up/21/03/vc54.png",
       "description" : "Pour la réalisation d'un site ou une application, j'ai au cours des années appris de nombreux langages et frameworks web. Vous pouvez les retrouver ci-dessous séparer en 2 catégories.",
       "outils" : ["Html","Css","Javascrip","Jquery","Bootstrap","React","JSON","Php","MySQL", "Ajax", "CakePHP", "Symphony"]
     },
