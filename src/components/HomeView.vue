@@ -1,5 +1,5 @@
 <template>
-    <div class="fond w-screen h-auto sm:h-auto md:h-screen lg:h-screen flex items-center justify-center flex-col text-white" id="view">
+    <div class="fond w-screen h-screen flex items-center justify-center flex-col text-white" id="view">
         <canvas class="text-center"  id="canvas"></canvas>
         <div class="text-left text-white absolute m-4">
             <h1 class="uppercase font-mine text-4xl sm:text-4xl md:text-6xl lg:text-6xl">Lena Clavier</h1>
@@ -89,7 +89,7 @@ export default {
 
         function init() {
             particleArray = []
-            let numberOfParticle = (canvas.height * canvas.width) /9500
+            let numberOfParticle = (canvas.height * canvas.width) /9000
             for (let i = 0; i < numberOfParticle*2; i++) {
                 let size = (Math.random() * 5) + 1
                 let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2)

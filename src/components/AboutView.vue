@@ -1,8 +1,8 @@
 <template>
-    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-evenly flex-col" id="section-about">
+    <div class="w-screen h-screen flex items-center justify-evenly flex-col" id="section-about">
         <div class="flex items-center justify-evenly p-5 flex-col sm:flex-col md:flex-row lg:flex-row">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2" id="text-about">
-                <h2 class="font-mineBold text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h2>
+                <h2 class="font-mineBold sm:text-lg md:text-2xl lg:text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h2>
                 <p>
                     Ma spécialité est de construire des sites web de A à Z, en commençant par la définition du produit, 
                     la réalisation des maquettes, l'intégration des pages et le développement des différentes fonctionnalités.
@@ -19,8 +19,8 @@
                     <button class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Download my CV</button>
                 </div> -->
             </div>
-            <div id="image-about">
-                <img src="../assets/images/torii.png" alt="torii">
+            <div id="image-about" class="flex md:block lg:block justify-center mt-7 md:mt-0 lg:mt-0">
+                <img class="w-1/2 md:w-full lg:w-full" src="../assets/images/torii.png" alt="torii">
             </div>
             <!-- <div class="flex justify-evenly flex-wrap">
                 <div class="sm:w-full md:w-5/12 lg:w-5/12 m-3">
@@ -93,7 +93,7 @@ export default {
 
 <style scoped>
     #text-about p{
-        @apply text-base my-4
+        @apply text-xs md:text-base lg:text-base my-4
     }
 
     .fond  {

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-evenly flex-col sm:flex-col md:flex-row lg:flex-row" id="section-contact">
+    <div class="w-screen h-screen flex items-center justify-evenly flex-col sm:flex-col md:flex-row lg:flex-row" id="section-contact">
         <div class="w-1/2" id="image-contact">
             <img class="m-auto" src="../assets/images/ie.png" alt="ie">
         </div>

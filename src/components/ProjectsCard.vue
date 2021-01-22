@@ -8,7 +8,7 @@
             <h2 class="font-bold text-xl">{{ project.name }} {{ project.date }}</h2>
             <!-- <p>{{ project.role }}</p> -->
             <!-- <p>{{ project.client }}</p> -->
-            <p>{{ project.description }}</p>
+            <p class="text-xs md:text-base lg:text-base">{{ project.description }}</p>
           </div>
           
 

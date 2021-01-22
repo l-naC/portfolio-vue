@@ -1,4 +1,5 @@
 <template>
+  <nav-bar/>
   <div id="snap-scroll-container">
     <home-view class="section" />
     <about-view class="section" />
@@ -7,7 +8,6 @@
     <contact-view class="section" />
     <footer-view class="section" />
   </div>
-  
 </template>
 
 <script>
@@ -19,6 +19,7 @@ import ProjectsView from '../components/ProjectsView.vue'
 import SkillsView from '../components/SkillsView.vue'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import NavBar from '../components/nav/NavBar.vue'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,10 +31,8 @@ export default {
       SkillsView,
       ProjectsView,
       ContactView,
-      FooterView
-  },
-  mounted: function () {
-    this.startAnimations()
+      FooterView,
+      NavBar
   },
   methods: {
     startAnimations: function () {
@@ -171,5 +170,4 @@ export default {
 .section{
   scroll-snap-align: start;
 }
-
 </style>

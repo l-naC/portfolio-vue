@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen sm:h-auto md:h-screen lg:h-screen flex items-center justify-center text-center" id="section-skills">
+    <div class="w-screen h-screen flex items-center justify-center text-center" id="section-skills">
         <div class="w-full">
             <div class="flex flex-row items-center">
                 <h2 class="font-bold m-0 cursor-pointer title-skills uppercase text-redjapan text-6xl sm:text-6xl md:text-8xl lg:text-8xl font-mineBold hover:text-black" v-on:click="all()">Skills</h2>
