@@ -1,10 +1,13 @@
 <template>
-  <home-view />
-  <about-view />
-  <skills-view />
-  <projects-view />
-  <contact-view />
-  <footer-view />
+  <div id="scroll">
+    <home-view class="section" />
+    <about-view class="section" />
+    <skills-view class="section" />
+    <projects-view class="section" />
+    <contact-view class="section" />
+    <footer-view class="section" />
+  </div>
+  
 </template>
 
 <script>
