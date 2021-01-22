@@ -27,8 +27,8 @@ h1, h2, h3{
         margin: 0;
     }
 
-    .title-skills{
-        font-size: 3rem !important;
+    .text-6xl{
+        font-size: 3rem;
     }
 
     #button{
