@@ -90,25 +90,25 @@
   "skills": [
   	{
       "name": "Développement web",
-      "icon": "https://zupimages.net/up/21/03/vc54.png",
+      "icon": "https://i.ibb.co/BTkDbfj/code.png",
       "description" : "",
       "outils" : ["Html","Css","Javascrip","Jquery","Bootstrap","React","JSON","Php","MySQL", "Ajax", "CakePHP", "Symphony"]
     },
     {
       "name": "Gestion de projet",
-      "icon": "https://zupimages.net/up/20/52/y3bb.png",
+      "icon": "https://i.ibb.co/cvdBwP9/project.png",
       "description" : "",
       "outils" : ["Trello","Asana","SuiteOffice","SuiteGoogle","Jira"]
     },
     {
       "name": "Communication",
-      "icon": "https://zupimages.net/up/20/52/ifbt.png",
+      "icon": "https://i.ibb.co/k3TD6HH/communication.png",
       "description" : "",
       "outils" : ["Photoshop", "Indesign", "Illustrator", "After Effect", "Première Pro"]
     },
     {
       "name": "UX/UI design",
-      "icon": "https://zupimages.net/up/21/03/wk0m.png",
+      "icon": "https://i.ibb.co/NZPB2hg/design.png",
       "description" : "",
       "outils" : ["Zeplin", "Figma", "Sketch"]
     }

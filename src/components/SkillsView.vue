@@ -99,7 +99,13 @@ export default {
 
     @media (max-width: 640px) {
         .title-skills{
-            @apply text-5xl
+           @apply text-5xl
+        }
+    }
+
+    @media (max-height: 360px) {
+        .title-skills {
+            font-size: 1.8rem;
         }
     }
 
