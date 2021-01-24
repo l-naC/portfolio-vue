@@ -2,7 +2,7 @@
     <div class="w-screen h-screen flex items-center justify-center text-center" id="section-skills">
         <div class="w-full" id="test">
             <div class="flex flex-row items-center">
-                <h2 class="font-bold m-0 cursor-pointer title-skills uppercase text-redjapan text-6xl md:text-8xl lg:text-8xl font-mineBold hover:text-black" v-on:click="all()">Skills</h2>
+                <h2 class="font-medium m-0 cursor-pointer title-skills uppercase text-redjapan font-mineBold hover:text-black" v-on:click="all()">Compétences</h2>
                 <div class="w-1/5 flex flex-col content-center justify-evenly flex-wrap my-5">
                     <div class="card-skills block md:hidden lg:hidden" v-for="(skill, index) in skillsData" :key="index">
                         <div class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
@@ -12,7 +12,7 @@
                     </div>
                     <div class="card-skills hidden md:block lg:block" v-for="(skill, index) in skillsData" :key="index">
                         <div @mouseover="hoverIn(index)" @mouseout="hoverOut(index)" class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
-                            <p v-if="hover && indexSkill==index" class="card-text-default">{{ skill.name }}</p>
+                            <p v-if="hover && indexSkill==index" :class="styleDisplay" class="card-text-default">{{ skill.name }}</p>
                             <img class="w-1/3" v-else :src="skill.icon" alt="icon">
                         </div>
                     </div>
@@ -52,13 +52,17 @@ export default {
             color: 'color: black',
             isDisplay: false,
             hover: false,
-            indexSkill: ''
+            indexSkill: '',
+            skillsName: 'hidden'
         }
     },
     computed:{
         textStyle: function() {
             return this.color
         },
+        styleDisplay: function () {
+            return this.skillsName
+        }
     },
     methods: {
         show: function (e) {
@@ -74,11 +78,12 @@ export default {
         hoverIn: function (index) {
             this.hover = true
             this.indexSkill =index
-            console.log(this.indexSkill)
+            this.skillsName = 'block'
         },
         hoverOut: function (index) {
             this.hover = false
             this.indexSkill =index
+            this.skillsName = 'hidden'
         }
     }
 }
@@ -89,6 +94,13 @@ export default {
     .title-skills{
         writing-mode: vertical-rl;
         text-orientation: upright;
+        font-size: 4rem;
+    }
+
+    @media (max-width: 640px) {
+        .title-skills{
+            @apply text-5xl
+        }
     }
 
     .card-default {

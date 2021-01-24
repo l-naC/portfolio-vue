@@ -4,19 +4,19 @@
       <li 
       v-on:mouseover="mouseover('H')"
       v-on:mouseleave="mouseleave('H')">
-          <a href="#view"><p :class="styleOpacityH">Home</p><div class="nav-round"></div></a></li>
+          <a href="#view"><p :class="styleOpacityH">Accueil</p><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('A')"
       v-on:mouseleave="mouseleave('A')">
-        <a href="#section-about"><p :class="styleOpacityA">About</p><div class="nav-round" ></div></a></li>
+        <a href="#section-about"><p :class="styleOpacityA">À propos</p><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('S')"
       v-on:mouseleave="mouseleave('S')">
-        <a href="#section-skills"><p :class="styleOpacityS">Skills</p><div class="nav-round" ></div></a></li>
+        <a href="#section-skills"><p :class="styleOpacityS">Compétences</p><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('P')"
       v-on:mouseleave="mouseleave('P')">
-        <a href="#section-projects"><p :class="styleOpacityP">Projects</p><div class="nav-round"></div></a></li>
+        <a href="#section-projects"><p :class="styleOpacityP">Projets</p><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('C')"
       v-on:mouseleave="mouseleave('C')">
@@ -116,11 +116,11 @@ nav ul li a{
   @apply flex justify-end items-center
 }
 .nav-round{
-  @apply rounded-full bg-redjapan mx-3 my-2 transition ease-out duration-700 h-2 w-2
+  @apply rounded-full bg-redjapan mx-3 my-2 transition ease-out duration-700 h-3 w-3
 }
 
 .active {
-  @apply h-4 w-4 
+  @apply h-5 w-5 
 }
 
 </style>

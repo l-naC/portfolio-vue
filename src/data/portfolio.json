@@ -6,7 +6,7 @@
       "role": "Developer frontend",
       "client": "IESA Multimedia",
       "url": "http://asso-resonance.surge.sh/",
-      "description": "Association qui a pour but l'insertion des handipés psychique en entreprise.",
+      "description": "Association qui a pour but l'insertion des handipés psychiques en entreprise.",
       "photo": "https://i.ibb.co/D4C6yKf/resonance.jpg",
       "date": "2018"
     },
@@ -91,25 +91,25 @@
   	{
       "name": "Développement web",
       "icon": "https://zupimages.net/up/21/03/vc54.png",
-      "description" : "Pour la réalisation d'un site ou une application, j'ai au cours des années appris de nombreux langages et frameworks web. Vous pouvez les retrouver ci-dessous séparer en 2 catégories.",
+      "description" : "",
       "outils" : ["Html","Css","Javascrip","Jquery","Bootstrap","React","JSON","Php","MySQL", "Ajax", "CakePHP", "Symphony"]
     },
     {
       "name": "Gestion de projet",
       "icon": "https://zupimages.net/up/20/52/y3bb.png",
-      "description" : "Pouvoir élaborer un projet et voir son évolution, c'est ce que j'ai appris à aimer lors de mes études. Pour cela j'ai dû apprendre à utiliser certains outils pour m'aider. Mais j'ai aussi à apprendre à rédiger de nombreux documents qui sont importants à mettre en place lors du lancement d'un projet. Que ce soit en méthode agile ou bien en méthode en V, j'ai déja participé à des projets utilisant ces deux méthodes.",
+      "description" : "",
       "outils" : ["Trello","Asana","SuiteOffice","SuiteGoogle","Jira"]
     },
     {
       "name": "Communication",
       "icon": "https://zupimages.net/up/20/52/ifbt.png",
-      "description" : "Lors d'un projet la communication est un point très important. Pour cela j'ai dî acquérir des compétences en graphisme mais aussi sur les socials médias.",
+      "description" : "",
       "outils" : ["Photoshop", "Indesign", "Illustrator", "After Effect", "Première Pro"]
     },
     {
       "name": "UX/UI design",
-      "icon": "https://zupimages.net/up/20/52/ro7t.png",
-      "description" : "Lors de la création d'un site ou bien d'une application, l'expérience utilisateur à une place importante car sans cela le projet pourrait ne pas fonctionner.",
+      "icon": "https://zupimages.net/up/21/03/wk0m.png",
+      "description" : "",
       "outils" : ["Zeplin", "Figma", "Sketch"]
     }
   ]

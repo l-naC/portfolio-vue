@@ -4,16 +4,16 @@
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2" id="text-about">
                 <h2 class="sm:text-lg md:text-2xl lg:text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h2>
                 <p>
-                    Ma spécialité est de construire des sites web de A à Z, en commençant par la définition du produit, 
-                    la réalisation des maquettes, l'intégration des pages et le développement des différentes fonctionnalités.
+                    Ma spécialitée est de construire des sites web de A à Z, en commençant par la définition du produit, 
+                    la réalisation des maquettes, l'intégration des pages et le développement des différentes fonctionnalitées.
                     Sans oublier l’optimisation du référencement naturel du site et sa mise en ligne.
                     <br/><br/>
-                    Ayant découvert le développement web lors de mon cursus à l’université. J’ai tout mis en œuvre pour percer 
+                    Je peux donc vous accompagner sur toutes les étapes de votre projet web.
+                    <br/><br/>
+                    Ayant découvert le développement web lors de mon cursus universitaire. J’ai tout mis en œuvre pour percer 
                     dans cette voie tout en prenant du plaisir sur tous mes projets.
                     <br/><br/>
-                    Je peux vous accompagner sur toutes les étapes de votre projet web.
-                    <br/><br/>
-                    Et comme vous pourrez le voir, je suis aussi une personne passionnée par le Japon et sa culture.
+                    Et comme vous pouvez le voir, je suis aussi une personne passionnée par le Japon et sa culture.
                 </p>
                 <!-- <div class="text-center my-5">
                     <button class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Download my CV</button>
@@ -74,7 +74,7 @@ export default {
     },
     methods: {
         mouseover: function(){
-        this.message = 'La compassion porté aux autres est un bienfait pour soi'
+        this.message = 'La compassion portée aux autres est un bienfait pour soi'
         },    
         mouseleave: function(){
         this.message = '弘法筆を択ばず'
