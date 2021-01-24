@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-screen flex items-center justify-evenly flex-col sm:flex-col md:flex-row lg:flex-row" id="section-contact">
+    <div class="w-screen h-screen flex items-center justify-evenly flex-col sm:flex-col md:flex-row lg:flex-row" id="contact">
         <div class="w-1/2" id="image-contact">
             <img class="m-auto" src="../assets/images/ie.png" alt="ie">
         </div>
@@ -16,7 +16,7 @@
                     <div class="p-5 md:p-2 lg:p-2" id="container-form">
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6">
-                                <label for="first_name" class="block text-sm font-medium text-gray-700">Nom</label>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
                                 <input type="text" id="name" name="name" v-model="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md">
                             </div>
 

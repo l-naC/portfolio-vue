@@ -4,23 +4,23 @@
       <li 
       v-on:mouseover="mouseover('H')"
       v-on:mouseleave="mouseleave('H')">
-          <a href="#view"><p :class="styleOpacityH">Accueil</p><div class="nav-round"></div></a></li>
+          <a href="#home"><p :class="styleOpacityH">Accueil</p><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('A')"
       v-on:mouseleave="mouseleave('A')">
-        <a href="#section-about"><p :class="styleOpacityA">À propos</p><div class="nav-round" ></div></a></li>
+        <a href="#about"><p :class="styleOpacityA">À propos</p><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('S')"
       v-on:mouseleave="mouseleave('S')">
-        <a href="#section-skills"><p :class="styleOpacityS">Compétences</p><div class="nav-round" ></div></a></li>
+        <a href="#skills"><p :class="styleOpacityS">Compétences</p><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('P')"
       v-on:mouseleave="mouseleave('P')">
-        <a href="#section-projects"><p :class="styleOpacityP">Projets</p><div class="nav-round"></div></a></li>
+        <a href="#projects"><p :class="styleOpacityP">Projets</p><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('C')"
       v-on:mouseleave="mouseleave('C')">
-        <a href="#section-contact"><p :class="styleOpacityC">Contact</p><div class="nav-round"></div></a></li>
+        <a href="#contact"><p :class="styleOpacityC">Contact</p><div class="nav-round"></div></a></li>
     </ul>
   </nav>
 </template>

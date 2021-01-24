@@ -11,7 +11,7 @@ h1, h2, h3{
 }
 
 @media(orientation : landscape) {
-    #section-about div, #section-contact {
+    #about div, #contact {
         flex-direction: row;
         padding: 0;
     }
@@ -20,7 +20,7 @@ h1, h2, h3{
         padding-left: 15px !important;
     }
 
-    #section-about div:last-child{
+    #about div:last-child{
         margin: 0;
     }
 
