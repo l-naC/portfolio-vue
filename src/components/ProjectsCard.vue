@@ -1,6 +1,6 @@
 <template>
     <div 
-        class="w-1/2 h-auto p-5 bg-cover bg-center bg-gradient-to-tr text-white transition duration-500 ease-in-out transform hover:scale-90 "
+        class="w-full md:w-1/2 lg:w-1/2 h-auto p-5 bg-cover bg-center bg-gradient-to-tr text-white transition duration-500 ease-in-out transform hover:scale-90 "
         :style="backgroundStyle"
     >
         <div class="h-full flex flex-col">

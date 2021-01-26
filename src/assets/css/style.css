@@ -1,35 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: 'Philosopher', sans-serif;
 }
 
-@media(orientation : landscape) {
-    #about div, #contact {
+@media(orientation: landscape) {
+    #about div,
+    #contact {
         flex-direction: row;
         padding: 0;
     }
-
     #text-about {
         padding-left: 15px !important;
     }
-
-    #about div:last-child{
+    #about div:last-child {
         margin: 0;
     }
-
-    #button{
+    #button {
         padding: 5px;
     }
-
-    #container-form{
+    #container-form {
         padding: 15px;
     }
 }
-

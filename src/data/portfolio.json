@@ -1,116 +1,114 @@
 {
-  "name": "Portfolio",
-  "projects": [
-    {
-      "name": "Resonance",
-      "role": "Developer frontend",
-      "client": "IESA Multimedia",
-      "url": "http://asso-resonance.surge.sh/",
-      "description": "Association qui a pour but l'insertion des handipés psychiques en entreprise.",
-      "photo": "https://i.ibb.co/D4C6yKf/resonance.jpg",
-      "date": "2018"
-    },
-    {
-      "name": "Cabinet chiropractique",
-      "role": "Developer fullstack",
-      "client": "Laetitia TAN",
-      "url": "https://chiropratique-tan.fr/",
-      "description": "Site vitrine pour un cabinet chiropratique",
-      "photo": "https://i.ibb.co/6v0H8KM/image-cabinet-chiro.jpg",
-      "date": "2019"
-    },
-    {
-      "name": "Nyl",
-      "role": "Developer fullstack",
-      "client": "IESA Multimedia",
-      "url": "https://nylproduct.lenaclavier.com/",
-      "description": "La seule et l’unique bibliothèque de vinyle intelligente",
-      "photo": "https://i.ibb.co/XLLtMby/nylproduct.jpg",
-      "date": "2019"
-    },
-    {
-      "name": "Helfe",
-      "role": "Developer frontend",
-      "client": "IIM",
-      "url": "https://helfe.lenaclavier.com/",
-      "description": "Landing de l'application Helfe",
-      "photo": "https://i.ibb.co/DCwphsJ/helfe.jpg",
-      "date": "2020"
-    }
-  ],
-  "formations": [
-    {
-      "name": "Formation relation-clientèle",
-      "place": "Orange 75012 Paris",
-      "date": "Juin 2016"
-    },
-    {
-      "name": "DUT MMI (Métier du multimédia et de l'internet)",
-      "place": "IUT de Meaux 77100 Meaux",
-      "date": "2016-2018"
-    },
-    {
-      "name": "Bachelor chef de projet digital, spécialisation developement web",
-      "place": "IESA Multimédia 75011 Paris",
-      "date": "2018-2019"
-    },
-    {
-      "name": "Mastère Management de la communication, spécialisation Ingénierie web et mobile",
-      "place": "IIM - Institut de l'internet et du multimédia 92060 Paris La Défense",
-      "date": "2019-2021"
-    }
-  ],
-  "experiences": [
-    {
-      "name": "Technicienne de surface, stage dans le cadre de ma formation",
-      "place": "Mikazuki Hotel, Katsu-ura (Japon)",
-      "date": "Août 2017"
-    },
-    {
-      "name": "Stage en tant que développeuse Full-stack",
-      "place": "GAD Delta",
-      "date": "Avril - Juin 2018"
-    },
-    {
-      "name": "Développeuse Full-stack en alternance",
-      "place": "GAD Delta",
-      "date": "2018 - 2019"
-    },
-    {
-      "name": "Assistante chef de projet digital (Pôle Premium)",
-      "place": "Prisma Media",
-      "date": "2019 - 2020"
-    },
-    {
-      "name": "Product owner junior (Pôle Premium)",
-      "place": "Prisma Media",
-      "date": "2020 - 2021"
-    }
-  ],
-  "skills": [
-  	{
-      "name": "Développement web",
-      "icon": "https://i.ibb.co/BTkDbfj/code.png",
-      "description" : "",
-      "outils" : ["Html","Css","Javascrip","Jquery","Bootstrap","React","JSON","Php","MySQL", "Ajax", "CakePHP", "Symphony"]
-    },
-    {
-      "name": "Gestion de projet",
-      "icon": "https://i.ibb.co/cvdBwP9/project.png",
-      "description" : "",
-      "outils" : ["Trello","Asana","SuiteOffice","SuiteGoogle","Jira"]
-    },
-    {
-      "name": "Communication",
-      "icon": "https://i.ibb.co/k3TD6HH/communication.png",
-      "description" : "",
-      "outils" : ["Photoshop", "Indesign", "Illustrator", "After Effect", "Première Pro"]
-    },
-    {
-      "name": "UX/UI design",
-      "icon": "https://i.ibb.co/NZPB2hg/design.png",
-      "description" : "",
-      "outils" : ["Zeplin", "Figma", "Sketch"]
-    }
-  ]
+    "name": "Portfolio",
+    "projects": [{
+            "name": "Resonance",
+            "role": "Developer frontend",
+            "client": "IESA Multimedia",
+            "url": "http://asso-resonance.surge.sh/",
+            "description": "Association qui a pour but l'insertion des handipés psychiques en entreprise.",
+            "photo": "https://i.ibb.co/0nRcHhD/resonance.webp",
+            "date": "2018"
+        },
+        {
+            "name": "Cabinet chiropractique",
+            "role": "Developer fullstack",
+            "client": "Laetitia TAN",
+            "url": "https://chiropratique-tan.fr/",
+            "description": "Site vitrine pour un cabinet chiropratique",
+            "photo": "https://i.ibb.co/sVs6JYB/image-cabinet-chiro.webp",
+            "date": "2019"
+        },
+        {
+            "name": "Nyl",
+            "role": "Developer fullstack",
+            "client": "IESA Multimedia",
+            "url": "https://nylproduct.lenaclavier.com/",
+            "description": "La seule et l’unique bibliothèque de vinyle intelligente",
+            "photo": "https://i.ibb.co/1m3schZ/nylproduct.webp",
+            "date": "2019"
+        },
+        {
+            "name": "Helfe",
+            "role": "Developer frontend",
+            "client": "IIM",
+            "url": "https://helfe.lenaclavier.com/",
+            "description": "Landing de l'application Helfe",
+            "photo": "https://i.ibb.co/7g81CpZ/helfe.webp",
+            "date": "2020"
+        }
+    ],
+    "formations": [{
+            "name": "Formation relation-clientèle",
+            "place": "Orange 75012 Paris",
+            "date": "Juin 2016"
+        },
+        {
+            "name": "DUT MMI (Métier du multimédia et de l'internet)",
+            "place": "IUT de Meaux 77100 Meaux",
+            "date": "2016-2018"
+        },
+        {
+            "name": "Bachelor chef de projet digital, spécialisation developement web",
+            "place": "IESA Multimédia 75011 Paris",
+            "date": "2018-2019"
+        },
+        {
+            "name": "Mastère Management de la communication, spécialisation Ingénierie web et mobile",
+            "place": "IIM - Institut de l'internet et du multimédia 92060 Paris La Défense",
+            "date": "2019-2021"
+        }
+    ],
+    "experiences": [{
+            "name": "Technicienne de surface, stage dans le cadre de ma formation",
+            "place": "Mikazuki Hotel, Katsu-ura (Japon)",
+            "date": "Août 2017"
+        },
+        {
+            "name": "Stage en tant que développeuse Full-stack",
+            "place": "GAD Delta",
+            "date": "Avril - Juin 2018"
+        },
+        {
+            "name": "Développeuse Full-stack en alternance",
+            "place": "GAD Delta",
+            "date": "2018 - 2019"
+        },
+        {
+            "name": "Assistante chef de projet digital (Pôle Premium)",
+            "place": "Prisma Media",
+            "date": "2019 - 2020"
+        },
+        {
+            "name": "Product owner junior (Pôle Premium)",
+            "place": "Prisma Media",
+            "date": "2020 - 2021"
+        }
+    ],
+    "skills": [{
+            "name": "Développement web",
+            "icon": "https://i.ibb.co/Yk4vSNQ/code.webp",
+            "description": "",
+            "outils": ["Html", "Css", "Javascrip", "Jquery", "Bootstrap", "React", "VueJS", "Wordpress",
+                "JSON", "Php", "MySQL", "Ajax", "CakePHP", "Symphony"
+            ]
+        },
+        {
+            "name": "Gestion de projet",
+            "icon": "https://i.ibb.co/Q6kg2bN/project.webp",
+            "description": "",
+            "outils": ["Trello", "Asana", "SuiteOffice", "SuiteGoogle", "Jira"]
+        },
+        {
+            "name": "Communication",
+            "icon": "https://i.ibb.co/PMYHTvr/communication.webp",
+            "description": "",
+            "outils": ["Photoshop", "Indesign", "Illustrator", "After Effect", "Première Pro"]
+        },
+        {
+            "name": "UX/UI design",
+            "icon": "https://i.ibb.co/qyvrCGW/design.webp",
+            "description": "",
+            "outils": ["Zeplin", "Figma", "Sketch"]
+        }
+    ]
 }

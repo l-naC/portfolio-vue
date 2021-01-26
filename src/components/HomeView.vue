@@ -156,7 +156,7 @@ export default {
 
 <style scoped>
     .fond  {
-        background-image: url('../assets/images/fond.jpg');
+        background-image: url('../assets/images/fond.webp');
         background-repeat: no-repeat;
         background-size: cover;
     }

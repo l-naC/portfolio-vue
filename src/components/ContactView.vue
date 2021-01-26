@@ -1,10 +1,10 @@
 <template>
     <div class="w-screen h-screen flex items-center justify-evenly flex-col sm:flex-col md:flex-row lg:flex-row" id="contact">
-        <div class="w-1/2" id="image-contact">
-            <img class="m-auto" src="../assets/images/ie.png" alt="ie">
+        <div id="image-contact">
+            <img class="m-auto w-1/2 md:w-full lg:w-full h-auto" src="../assets/images/ie.webp" alt="ie">
         </div>
         <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 flex items-center flex-col" id="form-contact">
-            <h3 class="my-3 text-center text-sm md:text-base lg:text-base">Une idée ? Un projet ? N'hésitez pas à me contacter</h3>
+            <h1 class="my-3 text-center text-sm md:text-base lg:text-base">Une idée ? Un projet ? N'hésitez pas à me contacter</h1>
             <p class="text-xs" v-if="errors.length">
                 <b>S'il vous plaît corrigez les informations suivantes</b>
                 <ul class="flex">

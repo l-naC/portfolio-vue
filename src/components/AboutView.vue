@@ -2,7 +2,7 @@
     <div class="w-screen h-screen flex items-center justify-evenly flex-col" id="about">
         <div class="flex items-center justify-evenly p-5 flex-col sm:flex-col md:flex-row lg:flex-row">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2" id="text-about">
-                <h2 class="sm:text-lg md:text-2xl lg:text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h2>
+                <h1 class="sm:text-lg md:text-2xl lg:text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h1>
                 <p>
                     Ma spécialitée est de construire des sites web de A à Z, en commençant par la définition du produit, 
                     la réalisation des maquettes, l'intégration des pages et le développement des différentes fonctionnalitées.
@@ -20,7 +20,7 @@
                 </div> -->
             </div>
             <div id="image-about" class="flex md:block lg:block justify-center">
-                <img class="w-1/2 md:w-full lg:w-full" src="../assets/images/torii.png" alt="torii">
+                <img class="w-1/2 md:w-full lg:w-full h-auto" src="../assets/images/torii.webp" alt="torii">
             </div>
             <!-- <div class="flex justify-evenly flex-wrap">
                 <div class="sm:w-full md:w-5/12 lg:w-5/12 m-3">
