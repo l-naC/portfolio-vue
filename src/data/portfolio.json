@@ -87,7 +87,7 @@
     "skills": [{
             "name": "Développement web",
             "icon": "https://i.ibb.co/Yk4vSNQ/code.webp",
-            "description": "",
+            "description": "Création ou bien refonte de site internet ! Je vous accompagne dans vos  développements sur mesure. Que ce soit avec des frameworks (VueJS, React, ...) ou bien avec un système de gestion de contenu (CMS) comme Wordpress.",
             "outils": ["Html", "Css", "Javascrip", "Jquery", "Bootstrap", "React", "VueJS", "Wordpress",
                 "JSON", "Php", "MySQL", "Ajax", "CakePHP", "Symphony"
             ]
@@ -95,19 +95,19 @@
         {
             "name": "Gestion de projet",
             "icon": "https://i.ibb.co/Q6kg2bN/project.webp",
-            "description": "",
-            "outils": ["Trello", "Asana", "SuiteOffice", "SuiteGoogle", "Jira"]
+            "description": "Je vous guiderais à travers toutes les phases necessaires à la mise en ligne de votre site, de l’analyse des besoins à la coordination des différentes étapes de réalisation. Cela va des choix des ressources externes, aux technologies adaptées.",
+            "outils": ["Trello", "Asana", "SuiteOffice", "SuiteGoogle", "Jira", "Github", "Gitlab", "Google Analytics", "DataStudio"]
         },
         {
             "name": "Communication",
             "icon": "https://i.ibb.co/PMYHTvr/communication.webp",
-            "description": "",
+            "description": "Vous souhaitez promouvoir votre site ! Je peux vous assiter dans la création des éléments de communication, que ce soit des newsletters, des bannières ou bien des visuels pour les réseaux sociaux.",
             "outils": ["Photoshop", "Indesign", "Illustrator", "After Effect", "Première Pro"]
         },
         {
             "name": "UX/UI design",
             "icon": "https://i.ibb.co/qyvrCGW/design.webp",
-            "description": "",
+            "description": "Vous souhaitez une identité graphique qui vous représente ! Je vous aide à la création de logos, de chartes graphiques et d’interfaces web à l’aide de différents outils.",
             "outils": ["Zeplin", "Figma", "Sketch"]
         }
     ]

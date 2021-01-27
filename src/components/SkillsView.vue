@@ -7,24 +7,25 @@
                     <div class="card-skills block md:hidden lg:hidden" v-for="(skill, index) in skillsData" :key="index">
                         <div class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
                             <p v-if="hover && indexSkill==index" class="card-text-default">{{ skill.name }}</p>
-                            <img class="w-1/3" v-else :src="skill.icon" alt="icon">
+                            <img class="w-1/3 skills-icon" v-else :src="skill.icon" alt="icon">
                         </div>
                     </div>
                     <div class="card-skills hidden md:block lg:block" v-for="(skill, index) in skillsData" :key="index">
                         <div @mouseover="hoverIn(index)" @mouseout="hoverOut(index)" class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
                             <p v-if="hover && indexSkill==index" :class="styleDisplay" class="card-text-default">{{ skill.name }}</p>
-                            <img class="w-1/3 h-auto" v-else :src="skill.icon" alt="icon">
+                            <img class="w-1/3 h-auto skills-icon" v-else :src="skill.icon" alt="icon">
                         </div>
                     </div>
                 </div>
                 <div id="infos-skills" class="w-4/5">
                     <div class="w-4/5 flex flex-wrap justify-center m-auto" v-if="isDisplay">
+                        <h2 class="text-2xl">{{array.name}}</h2>
                         <p class="w-full font-thin text-xs sm:text-xs md:text-lg lg:text-lg m-5">{{array.description}}</p>
                         <span v-for="item in array.outils" :key="item" class="transition duration-500 ease-in-out p-3" :style="textStyle">
                             {{ item }}
                         </span>
                     </div>
-                    <div class="w-4/5 flex flex-wrap justify-center m-auto" v-else>
+                    <div class="w-full md:w-4/5 lg:w-4/5 flex flex-wrap justify-center m-auto" v-else>
                         <template v-for="(skill, index) in skillsData" :key="index">
                             <span v-for="item in skillsData[index].outils" :key="item" class="transition duration-500 ease-in-out p-3" :style="textStyle">
                                 {{ item }}
@@ -91,6 +92,22 @@ export default {
 </script>
 
 <style scoped>
+    .skills-icon{
+        animation: animate 10s linear infinite;
+    }    
+    @keyframes animate{
+    100% {transform: rotate(1turn); }
+	}
+
+    .test:nth-child(2)
+    {
+    animation-delay: -0.2s;
+    }
+
+    .test:nth-child(3)
+    {
+    animation-delay: -0.4s;
+    }
     .title-skills{
         writing-mode: vertical-rl;
         text-orientation: upright;

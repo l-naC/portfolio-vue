@@ -1,32 +1,40 @@
 <template>
     <div class="w-screen h-screen flex items-center justify-center flex-col py-5" id="projects">
         <h1 class="font-bold text-xl text-black m-3">Projets récents</h1>
-        <div class="w-full md:w-4/5 lg:w-4/5 h-full flex flex-wrap justify-center flex-row sm:flex-col md:flex-row lg:flex-row m-0 md:m-5 lg:m-5">
-            <projects-card
-                v-for="(project, index) in projects"
-                :key="index"
-                :project-data="project"
-            />
-        </div>
+        <nav-pagination
+            :data="projectsData"
+            :total-pages="Math.ceil(projectsData.length / 4)"
+            :total="projectsData.length"
+            :per-page="4"
+            :current-page="currentPage"
+            @pagechanged="onPageChange"
+        />
     </div>
 </template>
 
 <script>
 import portfolioData from '../data/portfolio.json'
-import ProjectsCard from './ProjectsCard'
+import NavPagination from './nav/NavPagination'
+
 export default {
     name: "projects-view",
     components: {
-        ProjectsCard
+        NavPagination
     },
     data() {
         return {
-            projectsData: portfolioData.projects
+            projectsData: portfolioData.projects,
+            currentPage: 1,
         }
     },
     computed: {
         projects() {
-            return portfolioData.projects
+            return this.projectsData
+        }
+    },
+    methods: {
+        onPageChange(page) {
+            this.currentPage = page;
         },
     }
 }

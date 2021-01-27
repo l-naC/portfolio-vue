@@ -4,16 +4,17 @@
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2" id="text-about">
                 <h1 class="sm:text-lg md:text-2xl lg:text-2xl my-3 font-bold">Développeuse web passionnée et à l’écoute !</h1>
                 <p>
-                    Ma spécialitée est de construire des sites web de A à Z, en commençant par la définition du produit, 
-                    la réalisation des maquettes, l'intégration des pages et le développement des différentes fonctionnalitées.
-                    Sans oublier l’optimisation du référencement naturel du site et sa mise en ligne.
+                    Ma passion est d'accompagner de A à Z, les entreprises ainsi que les particuliers souhaitant créer un site internet.
                     <br/><br/>
-                    Je peux donc vous accompagner sur toutes les étapes de votre projet web.
+                    Je saurais vous accompagner tout au long de votre projet, depuis l’établissement du cahier des charges en passant par la 
+                    réalisation des maquettes mais également l’intégration des pages, le développement des différentes fonctionnalités. 
+                    Sans oublier, l’optimisation du référencement naturel du site et sa mise en ligne. 
                     <br/><br/>
-                    Ayant découvert le développement web lors de mon cursus universitaire. J’ai tout mis en œuvre pour percer 
-                    dans cette voie tout en prenant du plaisir sur tous mes projets.
+                    Étant diplômé d'un master I et en cours de formation d'un master II, j'ai déjà acquis une grande expérience dans le domaine 
+                    grâce aux différents projets sur lesquels j’ai pu travailler. Je suis convaincue d’avoir les atouts nécessaires pour 
+                    vous accompagner dans vos futurs projets.  
                     <br/><br/>
-                    Et comme vous pouvez le voir, je suis aussi une personne passionnée par le Japon et sa culture.
+                    Vous avez pu le constater, je suis aussi une personne passionnée par le Japon et sa culture.
                 </p>
                 <!-- <div class="text-center my-5">
                     <button class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Download my CV</button>
@@ -22,28 +23,6 @@
             <div id="image-about" class="flex md:block lg:block justify-center">
                 <img class="w-1/2 md:w-full lg:w-full h-auto" src="../assets/images/torii.webp" alt="torii">
             </div>
-            <!-- <div class="flex justify-evenly flex-wrap">
-                <div class="sm:w-full md:w-5/12 lg:w-5/12 m-3">
-                    <h2 class="font-bold text-xl text-gray-600">Formations</h2>
-                    <div class="bg-gray-50 divide-y divide-gray-400 shadow-2xl my-3 rounded-lg">
-                        <about-card 
-                            v-for="(formation, index) in formations"
-                            :key="index"
-                            :portfolio-data="formation"
-                        />
-                    </div>
-                </div>
-                <div class="sm:w-full md:w-5/12 lg:w-5/12 m-3">
-                    <h2 class="font-bold text-xl text-gray-600">Experiences</h2>
-                    <div class="bg-gray-50 divide-y divide-gray-400 shadow-2xl my-3 rounded-lg">
-                        <about-card 
-                            v-for="(experience, index) in experiences"
-                            :key="index"
-                            :portfolio-data="experience"
-                        />
-                    </div>
-                </div>
-            </div> -->
         </div>
         <div class="w-full text-center italic h-1/4 fond p-5 mb-8 md:mb-3 lg:mb-3">
             <h3 
@@ -59,17 +38,12 @@
 </template>
 
 <script>
-// import portfolioData from '../data/portfolio.json'
-// import AboutCard from './AboutCard.vue'
 
 export default {
     name: "about-view",
-    //components: { AboutCard },
     data() {
         return {
             message: '弘法筆を択ばず'
-            //formationsData: portfolioData.formations,
-            //experiencesData: portfolioData.experiences,
         }
     },
     methods: {
@@ -80,14 +54,6 @@ export default {
         this.message = '弘法筆を択ばず'
         }
     }
-    // computed: {
-    //     experiences() {
-    //     return portfolioData.experiences
-    //     },
-    //     formations() {
-    //     return portfolioData.formations
-    //     }
-    // }
 }
 </script>
 
