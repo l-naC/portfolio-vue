@@ -2,8 +2,8 @@
     <div class="w-screen h-screen flex items-center justify-center text-center" id="skills">
         <div class="w-full" id="test">
             <div class="flex flex-row items-center">
-                <h1 class="font-medium m-0 cursor-pointer title-skills uppercase text-redjapan font-mineBold hover:text-black" v-on:click="all()">Compétences</h1>
-                <div class="w-1/5 flex flex-col content-center justify-evenly flex-wrap my-5">
+                <h1 class="font-medium m-0 cursor-pointer title-skills text-3xl md:text-5xl lg:text-5xl uppercase text-redjapan font-mineBold hover:text-black" v-on:click="all()">Compétences</h1>
+                <div class="w-2/12 flex flex-col content-center justify-evenly flex-wrap my-5">
                     <div class="card-skills block md:hidden lg:hidden" v-for="(skill, index) in skillsData" :key="index">
                         <div class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
                             <p v-if="hover && indexSkill==index" class="card-text-default">{{ skill.name }}</p>
@@ -17,17 +17,17 @@
                         </div>
                     </div>
                 </div>
-                <div id="infos-skills" class="w-4/5">
-                    <div class="w-4/5 flex flex-wrap justify-center m-auto" v-if="isDisplay">
-                        <h2 class="text-2xl">{{array.name}}</h2>
-                        <p class="w-full font-thin text-xs sm:text-xs md:text-lg lg:text-lg m-5">{{array.description}}</p>
-                        <span v-for="item in array.outils" :key="item" class="transition duration-500 ease-in-out p-3" :style="textStyle">
+                <div id="infos-skills" class="w-8/12">
+                    <div class="flex flex-wrap justify-center px-2" v-if="isDisplay">
+                        <h2 class="text-lg md:text-2xl lg:text-2xl">{{array.name}}</h2>
+                        <p class="w-full font-thin text-xs md:text-lg lg:text-lg m-2 md:m-5 lg:m-5">{{array.description}}</p>
+                        <span v-for="item in array.outils" :key="item" class="transition duration-500 ease-in-out p-2 md:p-3 lg::p-3" :style="textStyle">
                             {{ item }}
                         </span>
                     </div>
                     <div class="w-full md:w-4/5 lg:w-4/5 flex flex-wrap justify-center m-auto" v-else>
                         <template v-for="(skill, index) in skillsData" :key="index">
-                            <span v-for="item in skillsData[index].outils" :key="item" class="transition duration-500 ease-in-out p-3" :style="textStyle">
+                            <span v-for="item in skillsData[index].outils" :key="item" class="transition duration-500 ease-in-out p-1 md:p-3 lg::p-3" :style="textStyle">
                                 {{ item }}
                             </span>
                         </template>
@@ -108,6 +108,7 @@ export default {
     {
     animation-delay: -0.4s;
     }
+
     .title-skills{
         writing-mode: vertical-rl;
         text-orientation: upright;
@@ -116,13 +117,7 @@ export default {
 
     @media (max-width: 640px) {
         .title-skills{
-           @apply text-5xl
-        }
-    }
-
-    @media (max-height: 360px) {
-        .title-skills {
-            font-size: 1.8rem;
+           @apply text-2xl
         }
     }
 

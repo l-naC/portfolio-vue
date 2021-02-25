@@ -21,6 +21,7 @@
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
         "three": "^0.123.0",
         "vue": "^3.0.0",
+        "vue-router": "^3.5.1",
         "vue-scrollmagic": "^1.2.0",
         "vuex": "^3.6.2"
     },

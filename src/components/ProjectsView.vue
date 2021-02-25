@@ -1,11 +1,11 @@
 <template>
-    <div class="w-screen h-screen flex items-center justify-center flex-col py-5" id="projects">
+    <div class="w-screen h-screen flex items-center justify-center flex-col" id="projects">
         <h1 class="font-bold text-xl text-black m-3">Projets récents</h1>
         <nav-pagination
             :data="projectsData"
-            :total-pages="Math.ceil(projectsData.length / 4)"
+            :total-pages="Math.ceil(projectsData.length / 2)"
             :total="projectsData.length"
-            :per-page="4"
+            :per-page="2"
             :current-page="currentPage"
             @pagechanged="onPageChange"
         />

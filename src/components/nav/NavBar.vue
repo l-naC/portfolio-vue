@@ -3,24 +3,25 @@
     <ul class="h-full flex flex-col justify-center align-center">
       <li 
       v-on:mouseover="mouseover('H')"
-      v-on:mouseleave="mouseleave('H')">
-          <a href="#home"><p :class="styleOpacityH">Accueil</p><div class="nav-round"></div></a></li>
+      v-on:mouseleave="mouseleave('H')"
+      >
+        <p :class="styleOpacityH">Accueil</p>  <a href="#home"><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('A')"
       v-on:mouseleave="mouseleave('A')">
-        <a href="#about"><p :class="styleOpacityA">À propos</p><div class="nav-round" ></div></a></li>
+        <p :class="styleOpacityA">À propos</p><a href="#about"><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('S')"
       v-on:mouseleave="mouseleave('S')">
-        <a href="#skills"><p :class="styleOpacityS">Compétences</p><div class="nav-round" ></div></a></li>
+        <p :class="styleOpacityS">Compétences</p><a href="#skills"><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('P')"
       v-on:mouseleave="mouseleave('P')">
-        <a href="#projects"><p :class="styleOpacityP">Projets</p><div class="nav-round"></div></a></li>
+       <p :class="styleOpacityP">Projets</p> <a href="#projects"><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('C')"
       v-on:mouseleave="mouseleave('C')">
-        <a href="#contact"><p :class="styleOpacityC">Contact</p><div class="nav-round"></div></a></li>
+        <p :class="styleOpacityC">Contact</p><a href="#contact"><div class="nav-round"></div></a></li>
     </ul>
   </nav>
 </template>
@@ -44,46 +45,46 @@ export default {
   name: "nav-bar",
   data() {
     return {
-      opcacityH: 'opacity-0',
-      opcacityA: 'opacity-0',
-      opcacityS: 'opacity-0',
-      opcacityP: 'opacity-0',
-      opcacityC: 'opacity-0',
+      opcacityH: 'opacity-0 hidden',
+      opcacityA: 'opacity-0 hidden',
+      opcacityS: 'opacity-0 hidden',
+      opcacityP: 'opacity-0 hidden',
+      opcacityC: 'opacity-0 hidden',
     }
   },
   methods: {
       mouseover: function(event){
         if (event === 'H'){
-          this.opcacityH = 'opacity-100 font-bold'
+          this.opcacityH = 'opacity-100 font-bold block'
         }
         else if (event === 'A') {
-          this.opcacityA = 'opacity-100 font-bold'
+          this.opcacityA = 'opacity-100 font-bold block'
         }
         else if (event === 'S') {
-          this.opcacityS = 'opacity-100 font-bold'
+          this.opcacityS = 'opacity-100 font-bold block'
         }
         else if (event === 'P') {
-          this.opcacityP = 'opacity-100 font-bold'
+          this.opcacityP = 'opacity-100 font-bold block'
         }
         else {
-          this.opcacityC = 'opacity-100 font-bold'
+          this.opcacityC = 'opacity-100 font-bold block'
         }
       },    
       mouseleave: function(event){
         if (event === 'H'){
-          this.opcacityH = 'opacity-0'
+          this.opcacityH = 'opacity-0 hidden'
         }
         else if (event === 'A') {
-          this.opcacityA = 'opacity-0'
+          this.opcacityA = 'opacity-0 hidden'
         }
         else if (event === 'S') {
-          this.opcacityS = 'opacity-0'
+          this.opcacityS = 'opacity-0 hidden'
         }
         else if (event === 'P') {
-          this.opcacityP = 'opacity-0'
+          this.opcacityP = 'opacity-0 hidden'
         }
         else {
-          this.opcacityC = 'opacity-0'
+          this.opcacityC = 'opacity-0 hidden'
         }
       }
   },
@@ -108,11 +109,11 @@ export default {
 </script>
 
 <style scoped>
-nav ul li a p {
-  @apply transition ease-out duration-700 hidden md:block lg:block
+nav ul li p{
+  @apply transition ease-out duration-700
 }
 
-nav ul li a{
+li{
   @apply flex justify-end items-center
 }
 .nav-round{
@@ -122,5 +123,4 @@ nav ul li a{
 .active {
   @apply h-5 w-5 
 }
-
 </style>

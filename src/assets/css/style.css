@@ -34,3 +34,16 @@ h3 {
         margin: 0 !important;
     }
 }
+
+@media (max-height: 533px) {
+    #image-about img,
+    #image-contact img {
+        display: none;
+    }
+    #text-about h1 {
+        font-size: 0.9rem;
+    }
+    #text-about p {
+        font-size: .5rem !important;
+    }
+}

@@ -3,7 +3,7 @@
         <div id="image-contact">
             <img class="m-auto w-1/2 md:w-full lg:w-full h-auto" src="../assets/images/ie.webp" alt="ie">
         </div>
-        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 flex items-center flex-col" id="form-contact">
+        <div class="w-full md:w-1/2 lg:w-1/2 flex items-center flex-col" id="form-contact">
             <h1 class="my-3 text-center text-sm md:text-base lg:text-base">Une idée ? Un projet ? N'hésitez pas à me contacter</h1>
             <p class="text-xs" v-if="errors.length">
                 <b>S'il vous plaît corrigez les informations suivantes</b>
@@ -11,9 +11,9 @@
                     <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
                 </ul>
             </p>
-            <form class="w-4/5 shadow-2xl bg-white rounded-lg my-0 md:my-5 lg:my-5" @submit.prevent="sendEmail" novalidate="true">
+            <form class="w-11/12 m:w-4/5 lg:w-4/5 shadow-2xl bg-white rounded-lg my-0 md:my-5 lg:my-5" @submit.prevent="sendEmail" novalidate="true">
                 <div class="sm:rounded-md">
-                    <div class="p-5 md:p-2 lg:p-2" id="container-form">
+                    <div class="p-3 md:p-2 lg:p-2" id="container-form">
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6">
                                 <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
@@ -36,8 +36,8 @@
                         </div>
                     </div>
                     <p class="text-xs text-center font-thin" :class="healthStyle">{{ alert }}</p>
-                    <div class="px-4 py-3 text-right sm:px-6" id="button">
-                        <button type="submit" class="inline-flex justify-center border border-transparent shadow-sm font-medium bg-black hover:bg-gray-500 rounded-full py-3 px-3 md:px-6 lg:px-6 text-xs md:text-sm lg:text-sm text-white focus:outline-none">
+                    <div class="p-1 md:px-2 md:py-2 lg:px-2 lg:py-2 text-right sm:px-6" id="button">
+                        <button type="submit" class="inline-flex justify-center border border-transparent shadow-sm font-medium bg-black hover:bg-gray-500 rounded-full py-1 px-3 md:px-6 lg:px-6 mr-3 mr-3 mb-3 mb-3 md:mr-3 lg:mr-3 md:mb-3 lg:mb-3 text-xs md:text-sm lg:text-sm text-white focus:outline-none">
                             Envoyer
                         </button>
                     </div>

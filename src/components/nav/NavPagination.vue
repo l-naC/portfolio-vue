@@ -1,5 +1,5 @@
 <template>
-    <ul class="relative z-0 inline-flex -space-x-px" aria-label="Pagination" v-if="data.length > 5 || currentPage > 1">
+    <ul class="relative z-0 inline-flex -space-x-px" aria-label="Pagination" v-if="data.length > 3 || currentPage > 1">
         <li class="relative inline-flex items-center px-2 rounded-l-md text-sm font-medium text-gray-500">
             <button type="button" @click="onClickPreviousPage" :disabled="isInFirstPage">
             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -26,7 +26,7 @@
             </button>
         </li>
     </ul>
-    <div class="w-full md:w-4/5 lg:w-4/5 h-full flex flex-wrap justify-center flex-row sm:flex-col md:flex-row lg:flex-row m-0 md:m-5 lg:m-5">
+    <div class="w-full md:w-4/5 lg:w-4/5 h-3/4 flex flex-wrap justify-center sm:flex-col md:flex-row lg:flex-row m-0 md:m-5 lg:m-5">
         <projects-card
             v-for="(project, index) in paginatedData"
             :key="index"

@@ -1,13 +1,13 @@
 {
     "name": "Portfolio",
     "projects": [{
-            "name": "Resonance",
-            "role": "Developer frontend",
-            "client": "IESA Multimedia",
-            "url": "http://asso-resonance.surge.sh/",
-            "description": "Association qui a pour but l'insertion des handipés psychiques en entreprise.",
-            "photo": "https://i.ibb.co/0nRcHhD/resonance.webp",
-            "date": "2018"
+            "name": "This & That",
+            "role": "Developer fullstack",
+            "client": "Vanessa Umariwase",
+            "url": "http://thisandthat.lenaclavier.com/",
+            "description": "Blog avec des articles de lifestyle, voyage, beauté et nourriture",
+            "photo": "https://thisandthat.lenaclavier.com/wp-content/uploads/2021/02/20191227_080300-scaled.jpg",
+            "date": "2021"
         },
         {
             "name": "Cabinet chiropractique",
@@ -16,16 +16,7 @@
             "url": "https://chiropratique-tan.fr/",
             "description": "Site vitrine pour un cabinet chiropratique",
             "photo": "https://i.ibb.co/sVs6JYB/image-cabinet-chiro.webp",
-            "date": "2019"
-        },
-        {
-            "name": "Nyl",
-            "role": "Developer fullstack",
-            "client": "IESA Multimedia",
-            "url": "https://nylproduct.lenaclavier.com/",
-            "description": "La seule et l’unique bibliothèque de vinyle intelligente",
-            "photo": "https://i.ibb.co/1m3schZ/nylproduct.webp",
-            "date": "2019"
+            "date": "2021"
         },
         {
             "name": "Helfe",
@@ -35,7 +26,25 @@
             "description": "Landing de l'application Helfe",
             "photo": "https://i.ibb.co/7g81CpZ/helfe.webp",
             "date": "2020"
+        },
+        {
+            "name": "Nyl",
+            "role": "Developer fullstack",
+            "client": "IESA Multimedia",
+            "url": "https://nylproduct.lenaclavier.com/",
+            "description": "La seule et l’unique bibliothèque de vinyle intelligente",
+            "photo": "https://i.ibb.co/1m3schZ/nylproduct.webp",
+            "date": "2019"
+        },{
+            "name": "Resonance",
+            "role": "Developer frontend",
+            "client": "IESA Multimedia",
+            "url": "http://asso-resonance.surge.sh/",
+            "description": "Association qui a pour but l'insertion des handipés psychiques en entreprise.",
+            "photo": "https://i.ibb.co/0nRcHhD/resonance.webp",
+            "date": "2018"
         }
+        
     ],
     "formations": [{
             "name": "Formation relation-clientèle",
