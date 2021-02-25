@@ -1,6 +1,7 @@
 {
     "name": "Portfolio",
     "projects": [{
+            "id": "0",
             "name": "This & That",
             "role": "Developer fullstack",
             "client": "Vanessa Umariwase",
@@ -10,6 +11,7 @@
             "date": "2021"
         },
         {
+            "id": "1",
             "name": "Cabinet chiropractique",
             "role": "Developer fullstack",
             "client": "Laetitia TAN",
@@ -19,6 +21,7 @@
             "date": "2021"
         },
         {
+            "id": "2",
             "name": "Helfe",
             "role": "Developer frontend",
             "client": "IIM",
@@ -28,6 +31,7 @@
             "date": "2020"
         },
         {
+            "id": "3",
             "name": "Nyl",
             "role": "Developer fullstack",
             "client": "IESA Multimedia",
@@ -36,6 +40,7 @@
             "photo": "https://i.ibb.co/1m3schZ/nylproduct.webp",
             "date": "2019"
         },{
+            "id": "4",
             "name": "Resonance",
             "role": "Developer frontend",
             "client": "IESA Multimedia",
@@ -44,7 +49,6 @@
             "photo": "https://i.ibb.co/0nRcHhD/resonance.webp",
             "date": "2018"
         }
-        
     ],
     "formations": [{
             "name": "Formation relation-clientèle",
@@ -94,6 +98,7 @@
         }
     ],
     "skills": [{
+            "id": "0",
             "name": "Développement web",
             "icon": "https://i.ibb.co/Yk4vSNQ/code.webp",
             "description": "Création ou bien refonte de site internet ! Je vous accompagne dans vos  développements sur mesure. Que ce soit avec des frameworks (VueJS, React, ...) ou bien avec un système de gestion de contenu (CMS) comme Wordpress.",
@@ -102,18 +107,21 @@
             ]
         },
         {
+            "id": "1",
             "name": "Gestion de projet",
             "icon": "https://i.ibb.co/Q6kg2bN/project.webp",
             "description": "Je vous guiderais à travers toutes les phases necessaires à la mise en ligne de votre site, de l’analyse des besoins à la coordination des différentes étapes de réalisation. Cela va des choix des ressources externes, aux technologies adaptées.",
             "outils": ["Trello", "Asana", "SuiteOffice", "SuiteGoogle", "Jira", "Github", "Gitlab", "Google Analytics", "DataStudio"]
         },
         {
+            "id": "2",
             "name": "Communication",
             "icon": "https://i.ibb.co/PMYHTvr/communication.webp",
             "description": "Vous souhaitez promouvoir votre site ! Je peux vous assiter dans la création des éléments de communication, que ce soit des newsletters, des bannières ou bien des visuels pour les réseaux sociaux.",
             "outils": ["Photoshop", "Indesign", "Illustrator", "After Effect", "Première Pro"]
         },
         {
+            "id": "3",
             "name": "UX/UI design",
             "icon": "https://i.ibb.co/qyvrCGW/design.webp",
             "description": "Vous souhaitez une identité graphique qui vous représente ! Je vous aide à la création de logos, de chartes graphiques et d’interfaces web à l’aide de différents outils.",

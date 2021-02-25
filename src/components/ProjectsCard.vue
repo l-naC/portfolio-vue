@@ -5,13 +5,13 @@
     >
         <div class="h-full flex flex-col">
           <div class="h-full flex flex-col justify-center">
-            <h2 class="font-bold text-base md:text-xl lg:text-xl">{{ projectData.name }} {{ projectData.date }}</h2>
-            <p class="text-xs md:text-base lg:text-base">{{ projectData.description }}</p>
+            <h2 class="font-bold text-base md:text-xl lg:text-xl">{{ $t('projects['+this.projectData['id']+'].name') }} {{ projectData.date }}</h2>
+            <p class="text-xs md:text-base lg:text-base">{{ $t('projects['+this.projectData['id']+'].description') }}</p>
           </div>
           
 
           <div class="text-center my-5">
-            <a v-bind:href="linkWebsite" class="bg-black hover:bg-gray-500 rounded-full py-3 px-3 md:px-6 lg:px-6 text-xs md:text-sm lg:text-sm text-white">Visitez le site</a>
+            <a v-bind:href="linkWebsite" class="bg-black hover:bg-gray-500 rounded-full py-3 px-3 md:px-6 lg:px-6 text-xs md:text-sm lg:text-sm text-white">{{ $t("project.button") }}</a>
           </div>
         </div>
     </div>

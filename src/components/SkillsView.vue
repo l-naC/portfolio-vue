@@ -2,25 +2,25 @@
     <div class="w-screen h-screen flex items-center justify-center text-center" id="skills">
         <div class="w-full" id="test">
             <div class="flex flex-row items-center">
-                <h1 class="font-medium m-0 cursor-pointer title-skills text-3xl md:text-5xl lg:text-5xl uppercase text-redjapan font-mineBold hover:text-black" v-on:click="all()">Compétences</h1>
+                <h1 class="font-medium m-0 cursor-pointer title-skills text-3xl md:text-5xl lg:text-5xl uppercase text-redjapan font-mineBold hover:text-black" v-on:click="all()">{{ $t("competences.titre") }}</h1>
                 <div class="w-2/12 flex flex-col content-center justify-evenly flex-wrap my-5">
                     <div class="card-skills block md:hidden lg:hidden" v-for="(skill, index) in skillsData" :key="index">
                         <div class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
-                            <p v-if="hover && indexSkill==index" class="card-text-default">{{ skill.name }}</p>
+                            <p v-if="hover && indexSkill==index" class="card-text-default">{{ $t('skills['+skill['id']+'].name') }}</p>
                             <img class="w-1/3 skills-icon" v-else :src="skill.icon" alt="icon">
                         </div>
                     </div>
                     <div class="card-skills hidden md:block lg:block" v-for="(skill, index) in skillsData" :key="index">
                         <div @mouseover="hoverIn(index)" @mouseout="hoverOut(index)" class="card-default cursor-pointer transition duration-500 ease-in-out transform hover:scale-110 m-3" v-on:click="show(index)">
-                            <p v-if="hover && indexSkill==index" :class="styleDisplay" class="card-text-default">{{ skill.name }}</p>
+                            <p v-if="hover && indexSkill==index" :class="styleDisplay" class="card-text-default">{{ $t('skills['+skill['id']+'].name') }}</p>
                             <img class="w-1/3 h-auto skills-icon" v-else :src="skill.icon" alt="icon">
                         </div>
                     </div>
                 </div>
                 <div id="infos-skills" class="w-8/12">
                     <div class="flex flex-wrap justify-center px-2" v-if="isDisplay">
-                        <h2 class="text-lg md:text-2xl lg:text-2xl">{{array.name}}</h2>
-                        <p class="w-full font-thin text-xs md:text-lg lg:text-lg m-2 md:m-5 lg:m-5">{{array.description}}</p>
+                        <h2 class="text-lg md:text-2xl lg:text-2xl">{{ $t('skills['+this.array['id']+'].name') }}</h2>
+                        <p class="w-full font-thin text-xs md:text-lg lg:text-lg m-2 md:m-5 lg:m-5">{{ $t('skills['+this.array['id']+'].description') }}</p>
                         <span v-for="item in array.outils" :key="item" class="transition duration-500 ease-in-out p-2 md:p-3 lg::p-3" :style="textStyle">
                             {{ item }}
                         </span>

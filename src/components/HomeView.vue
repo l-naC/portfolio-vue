@@ -2,8 +2,8 @@
     <div class="fond w-screen h-screen flex items-center justify-center flex-col text-white" id="home">
         <canvas class="text-center"  id="canvas"></canvas>
         <div class="text-left text-white absolute m-4">
-            <h1 class="uppercase text-4xl sm:text-4xl md:text-6xl lg:text-6xl">Lena Clavier</h1>
-            <h2 class="text-2xl sm:text-2xl md:text-4xl lg:text-4xl">Développeur web et Chef de projet digital</h2>
+            <h1 class="uppercase text-4xl sm:text-4xl md:text-6xl lg:text-6xl">{{ $t("home.name") }}</h1>
+            <h2 class="text-2xl sm:text-2xl md:text-4xl lg:text-4xl">{{ $t("home.titre") }}</h2>
         </div>
     </div> 
 </template>

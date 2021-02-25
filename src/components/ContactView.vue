@@ -4,9 +4,9 @@
             <img class="m-auto w-1/2 md:w-full lg:w-full h-auto" src="../assets/images/ie.webp" alt="ie">
         </div>
         <div class="w-full md:w-1/2 lg:w-1/2 flex items-center flex-col" id="form-contact">
-            <h1 class="my-3 text-center text-sm md:text-base lg:text-base">Une idée ? Un projet ? N'hésitez pas à me contacter</h1>
+            <h1 class="my-3 text-center text-sm md:text-base lg:text-base">{{ $t("contact.intro") }}</h1>
             <p class="text-xs" v-if="errors.length">
-                <b>S'il vous plaît corrigez les informations suivantes</b>
+                <b>{{ $t("contact.error") }}</b>
                 <ul class="flex">
                     <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
                 </ul>
@@ -16,18 +16,18 @@
                     <div class="p-3 md:p-2 lg:p-2" id="container-form">
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6">
-                                <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
+                                <label for="name" class="block text-sm font-medium text-gray-700">{{ $t("contact.nom") }}</label>
                                 <input type="text" id="name" name="name" v-model="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md">
                             </div>
 
                             <div class="col-span-6">
-                                <label for="email_address" class="block text-sm font-medium text-gray-700">Adresse email</label>
+                                <label for="email_address" class="block text-sm font-medium text-gray-700">{{ $t("contact.email") }}</label>
                                 <input type="text" id="email_address" name="email" v-model="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md" placeholder="you@example.com">
                             </div>
 
                             <div class="col-span-6">
                                 <label for="message" class="block text-sm font-medium text-gray-700">
-                                    Message
+                                    {{ $t("contact.message") }}
                                 </label>
                                 <div class="mt-1">
                                     <textarea id="message" name="message" v-model="message" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm bg-gray-100 rounded-md"></textarea>
@@ -38,7 +38,7 @@
                     <p class="text-xs text-center font-thin" :class="healthStyle">{{ alert }}</p>
                     <div class="p-1 md:px-2 md:py-2 lg:px-2 lg:py-2 text-right sm:px-6" id="button">
                         <button type="submit" class="inline-flex justify-center border border-transparent shadow-sm font-medium bg-black hover:bg-gray-500 rounded-full py-1 px-3 md:px-6 lg:px-6 mr-3 mr-3 mb-3 mb-3 md:mr-3 lg:mr-3 md:mb-3 lg:mb-3 text-xs md:text-sm lg:text-sm text-white focus:outline-none">
-                            Envoyer
+                            {{ $t("contact.button") }}
                         </button>
                     </div>
                 </div>

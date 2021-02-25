@@ -2,18 +2,15 @@
     <div class="w-screen h-screen flex items-center justify-evenly flex-col" id="about">
         <div class="flex items-center justify-evenly px-2 flex-col sm:flex-col md:flex-row lg:flex-row">
             <div class="w-full sm:w-full md:w-1/2 lg:w-1/2" id="text-about">
-                <h1 class="sm:text-xs md:text-2xl lg:text-2xl my-2 font-normal md:font-bold lg:font-bold">Développeuse web passionnée et à l’écoute !</h1>
+                <h1 class="sm:text-xs md:text-2xl lg:text-2xl my-2 font-normal md:font-bold lg:font-bold">{{ $t("intro.baseline") }}</h1>
                 <p>
-                    Ma passion est d'accompagner de A à Z, les entreprises ainsi que les particuliers souhaitant créer un site internet.
+                    {{ $t("intro.pargraphe1") }}
                     <br/><br/>
-                    Je saurai vous accompagner tout au long de votre projet, depuis l’établissement du cahier des charges en passant par la 
-                    réalisation des maquettes mais également l’intégration des pages, le développement des différentes fonctionnalités. 
-                    Sans oublier, l’optimisation du référencement naturel du site et sa mise en ligne. 
+                    {{ $t("intro.pargraphe2") }}
                     <br/><br/>
-                    Étant diplômé d'un master I et en cours de formation d'un master II, les différents projets sur lesquels j’ai pu travailler m'ont permis d'acquérir de l'expérience dans le domaine. Je suis convaincue d’avoir les atouts nécessaires pour 
-                    vous accompagner dans vos futurs projets.  
+                    {{ $t("intro.pargraphe3") }}
                     <br/><br/>
-                    Vous avez pu le constater, je suis aussi une personne passionnée par le Japon et sa culture.
+                    {{ $t("intro.pargraphe4") }}
                 </p>
                 <!-- <div class="text-center my-5">
                     <button class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Download my CV</button>
@@ -30,7 +27,7 @@
             v-on:mouseleave="mouseleave">
             " {{message}} "
             </h3>
-            <p class="text-xs mb-2">(proverbe japonais)</p>
+            <p class="text-xs mb-2">{{ $t("intro.proverbeP") }}</p>
         </div>
     </div>
     
@@ -47,7 +44,7 @@ export default {
     },
     methods: {
         mouseover: function(){
-        this.message = 'La compassion portée aux autres est un bienfait pour soi'
+        this.message = this.$i18n.t("intro.proverbe")
         },    
         mouseleave: function(){
         this.message = '弘法筆を択ばず'

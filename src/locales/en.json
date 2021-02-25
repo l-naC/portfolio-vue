@@ -1,0 +1,79 @@
+{
+    "menu": {
+        "accueil": "Home",
+        "propos": "About",
+        "competences": "Skills",
+        "projets": "Projects",
+        "contact": "Contact"
+    },
+    "intro": {
+        "baseline": "Passionate and attentive web developer!",
+        "pargraphe1": "My passion is to support from A to Z, companies as well as individuals wishing to create a website.",
+        "pargraphe2": "I will be able to support you throughout your project, from the establishment of the specifications through the production of the models but also the integration of the pages, the development of the various functionalities. Without forgetting, the optimization of the natural referencing of the site and its putting online. ",
+        "pargraphe3": "Having graduated from a Master I and in the process of training for a Master II, the various projects I was able to work on allowed me to gain experience in the field. I am convinced that I have the necessary assets to support you in your future projects.",
+        "pargraphe4": "As you can see, I am also passionate about Japan and its culture.",
+        "proverbeP": "(japanese proverb)",
+        "proverbe": "Compassion for others is good for you"
+    },
+    "contact": {
+        "intro": "An idea ? A project ? You can contact me",
+        "error": "Please correct the following informations",
+        "nom": "Name",
+        "email": "Email adress",
+        "message": "Message",
+        "button": "Send"
+    },
+    "home": {
+        "name": "Lena Clavier",
+        "titre": "Freelance developer web & Product owner"
+    },
+    "project": {
+        "titre": "New projects",
+        "button": "Visit website"
+    },
+    "competences": {
+        "titre": "Skills"
+    },
+    "projects": [{
+            "name": "This & That",
+            "role": "Full stack developer",
+            "description": "Blog with lifestyle, travel, beauty and food articles"
+        },
+        {
+            "name": "Chiropractic practice",
+            "role": "Full stack developer",
+            "description": "howcase site for a chiropractic practice"
+        },
+        {
+            "name": "Helfe",
+            "role": "Front-end developer",
+            "description": "Landing of the Helfe application"
+        },
+        {
+            "name": "Nyl",
+            "role": "Full stack developer",
+            "description": "The one and only intelligent vinyl library"
+        },{
+            "name": "Resonance",
+            "role": "Front-end developer",
+            "description": "Association which aims to integrate psychic handicapped people in business."
+        }
+    ],
+    "skills": [{
+        "name": "Web development",
+        "description": "Creation or redesign of website! I support you in your tailor-made developments. Whether with frameworks (VueJS, React, ...) or with a content management system (CMS) like Wordpress."
+    },
+    {
+        "name": "Project management",
+        "description": "I will guide you through all the phases necessary to bring your site online, from the needs analysis to the coordination of the various stages of implementation. This ranges from the choice of external resources to adapted technologies."
+    },
+    {
+        "name": "Communication",
+        "description": "You want to promote your website ! I can assist you in creating communication elements, whether newsletters, banners or visuals for social networks."
+    },
+    {
+        "name": "UX/UI design",
+        "description": "You want a graphic identity that represents you! I help you with the creation of logos, graphic charters and web interfaces using various tools."
+    }
+]
+}

@@ -1,0 +1,81 @@
+{
+    "menu": {
+        "accueil": "Accueil",
+        "propos": "À propos",
+        "competences": "Compétences",
+        "projets": "Projets",
+        "contact": "Contact"
+    },
+    "intro": {
+        "baseline": "Développeuse web passionnée et à l’écoute !",
+        "pargraphe1": "Ma passion est d'accompagner de A à Z, les entreprises ainsi que les particuliers souhaitant créer un site internet.",
+        "pargraphe2": "Je saurai vous accompagner tout au long de votre projet, depuis l’établissement du cahier des charges en passant par la réalisation des maquettes mais également l’intégration des pages, le développement des différentes fonctionnalités. Sans oublier, l’optimisation du référencement naturel du site et sa mise en ligne. ",
+        "pargraphe3": "Étant diplômé d'un master I et en cours de formation d'un master II, les différents projets sur lesquels j’ai pu travailler m'ont permis d'acquérir de l'expérience dans le domaine. Je suis convaincue d’avoir les atouts nécessaires pour vous accompagner dans vos futurs projets.",
+        "pargraphe4": "Vous avez pu le constater, je suis aussi une personne passionnée par le Japon et sa culture.",
+        "proverbeP": "(proverbe japonais)",
+        "proverbe": "La compassion portée aux autres est un bienfait pour soi"
+    },
+    "contact": {
+        "intro": "Une idée ? Un projet ? N'hésitez pas à me contacter",
+        "error": "S'il vous plaît corrigez les informations suivantes",
+        "nom": "Nom",
+        "email": "Adresse email",
+        "message": "Message",
+        "button": "Envoyer"
+    },
+    "home": {
+        "name": "Léna Clavier",
+        "titre": "Développeur web et Chef de projet digital"
+    },
+    "project": {
+        "titre": "Projets récents",
+        "button": "Visitez le site",
+        "name": "",
+        "description": ""
+    },
+    "competences": {
+        "titre": "Compétences"
+    },
+    "projects": [{
+            "name": "This & That",
+            "role": "Developer full stack",
+            "description": "Blog avec des articles de lifestyle, voyage, beauté et nourriture"
+        },
+        {
+            "name": "Cabinet chiropractique",
+            "role": "Developer full stack",
+            "description": "Site vitrine pour un cabinet chiropratique"
+        },
+        {
+            "name": "Helfe",
+            "role": "Developer front-end",
+            "description": "Landing de l'application Helfe"
+        },
+        {
+            "name": "Nyl",
+            "role": "Developer full stack",
+            "description": "La seule et l’unique bibliothèque de vinyle intelligente"
+        },{
+            "name": "Resonance",
+            "role": "Developer front-end",
+            "description": "Association qui a pour but l'insertion des handipés psychiques en entreprise."
+        }
+    ],
+    "skills": [{
+            "name": "Développement web",
+            "description": "Création ou bien refonte de site internet ! Je vous accompagne dans vos  développements sur mesure. Que ce soit avec des frameworks (VueJS, React, ...) ou bien avec un système de gestion de contenu (CMS) comme Wordpress."
+        },
+        {
+            "name": "Gestion de projet",
+            "description": "Je vous guiderais à travers toutes les phases necessaires à la mise en ligne de votre site, de l’analyse des besoins à la coordination des différentes étapes de réalisation. Cela va des choix des ressources externes, aux technologies adaptées."
+        },
+        {
+            "name": "Communication",
+            "description": "Vous souhaitez promouvoir votre site ! Je peux vous assiter dans la création des éléments de communication, que ce soit des newsletters, des bannières ou bien des visuels pour les réseaux sociaux."
+        },
+        {
+            "name": "UX/UI design",
+            "description": "Vous souhaitez une identité graphique qui vous représente ! Je vous aide à la création de logos, de chartes graphiques et d’interfaces web à l’aide de différents outils."
+        }
+    ]
+} 

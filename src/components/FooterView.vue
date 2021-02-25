@@ -13,4 +13,4 @@
 export default {
     name: "footer-vue"
 }
-</script>
+</script> 

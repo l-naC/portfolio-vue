@@ -1,27 +1,34 @@
 <template>
-  <nav class="h-screen float-right z-50 fixed text-red-800 right-0">
+  <div class="float-right z-50 fixed text-red-800 right-0 m-3">
+    <select v-model="$i18n.locale">
+      <option value="fr">FR</option>
+      <option value="en">EN</option>
+    </select>
+  </div>
+ 
+  <nav class="h-screen float-right z-40 fixed text-red-800 right-0">
     <ul class="h-full flex flex-col justify-center align-center">
       <li 
       v-on:mouseover="mouseover('H')"
       v-on:mouseleave="mouseleave('H')"
       >
-        <p :class="styleOpacityH">Accueil</p>  <a href="#home"><div class="nav-round"></div></a></li>
+        <p :class="styleOpacityH">{{ $t("menu.accueil") }}</p><a href="#home"><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('A')"
       v-on:mouseleave="mouseleave('A')">
-        <p :class="styleOpacityA">À propos</p><a href="#about"><div class="nav-round" ></div></a></li>
+        <p :class="styleOpacityA">{{ $t("menu.propos") }}</p><a href="#about"><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('S')"
       v-on:mouseleave="mouseleave('S')">
-        <p :class="styleOpacityS">Compétences</p><a href="#skills"><div class="nav-round" ></div></a></li>
+        <p :class="styleOpacityS">{{ $t("menu.competences") }}</p><a href="#skills"><div class="nav-round" ></div></a></li>
       <li 
       v-on:mouseover="mouseover('P')"
       v-on:mouseleave="mouseleave('P')">
-       <p :class="styleOpacityP">Projets</p> <a href="#projects"><div class="nav-round"></div></a></li>
+       <p :class="styleOpacityP">{{ $t("menu.projets") }}</p> <a href="#projects"><div class="nav-round"></div></a></li>
       <li 
       v-on:mouseover="mouseover('C')"
       v-on:mouseleave="mouseleave('C')">
-        <p :class="styleOpacityC">Contact</p><a href="#contact"><div class="nav-round"></div></a></li>
+        <p :class="styleOpacityC">{{ $t("menu.contact") }}</p><a href="#contact"><div class="nav-round"></div></a></li>
     </ul>
   </nav>
 </template>
