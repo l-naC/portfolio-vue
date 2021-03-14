@@ -1,53 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Philosopher', sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
 
-@media(orientation: landscape) {
-    #about div,
-    #contact {
-        flex-direction: row;
-        padding: 0;
-    }
-    #text-about {
-        padding-left: 15px !important;
-    }
-    #about div:last-child {
-        margin: 0;
-    }
-    #button {
-        padding: 5px;
-    }
-    #container-form {
-        padding: 15px;
-    }
-    #text-about p {
-        margin: 0 !important;
-    }
+@media (orientation: landscape) {
+  #about div,
+  #contact {
+    flex-direction: row;
+    padding: 0;
+  }
+  #text-about {
+    padding-left: 15px !important;
+  }
+  #image-about {
+    margin: 0;
+  }
+  #button {
+    padding: 5px;
+  }
+  #container-form {
+    padding: 15px;
+  }
+  #text-about p {
+    margin: 0 !important;
+  }
 }
 
 @media (max-height: 533px) {
-    #image-about img,
-    #image-contact img {
-        display: none;
-    }
-    #text-about h1 {
-        font-size: 0.9rem;
-    }
-    #text-about p {
-        font-size: .5rem !important;
-    }
+  #image-about img,
+  #image-contact img {
+    display: none;
+  }
+  #text-about h1 {
+    font-size: 0.9rem;
+  }
+  #text-about p {
+    font-size: 0.5rem !important;
+  }
 }
 
-input:focus { outline: 0 !important; }
-select:focus { outline: 0 !important; }
-textarea:focus { outline: 0 !important; }
+input:focus {
+  outline: 0 !important;
+}
+select:focus {
+  outline: 0 !important;
+}
+textarea:focus {
+  outline: 0 !important;
+}
+button:focus {
+  outline: 0 !important;
+}

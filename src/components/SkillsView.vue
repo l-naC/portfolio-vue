@@ -112,13 +112,6 @@ export default {
     .title-skills{
         writing-mode: vertical-rl;
         text-orientation: upright;
-        font-size: 4rem;
-    }
-
-    @media (max-width: 640px) {
-        .title-skills{
-           @apply text-2xl
-        }
     }
 
     .card-default {

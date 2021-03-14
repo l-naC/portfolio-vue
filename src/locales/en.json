@@ -8,12 +8,12 @@
     },
     "intro": {
         "baseline": "Passionate and attentive web developer!",
-        "pargraphe1": "My passion is to support from A to Z, companies as well as individuals wishing to create a website.",
-        "pargraphe2": "I will be able to support you throughout your project, from the establishment of the specifications through the production of the models but also the integration of the pages, the development of the various functionalities. Without forgetting, the optimization of the natural referencing of the site and its putting online. ",
-        "pargraphe3": "Having graduated from a Master I and in the process of training for a Master II, the various projects I was able to work on allowed me to gain experience in the field. I am convinced that I have the necessary assets to support you in your future projects.",
-        "pargraphe4": "As you can see, I am also passionate about Japan and its culture.",
+        "pargraphe1": "My passion is to support you all the way through , companies and independant who want to create a website.",
+        "pargraphe2": "I could helped you  all the way through of your project, to start with since  the specification note, then the passing by the design of the website but also with to  the integration and finally the development of the fonctionnalities. Not forgetting, SEO optimizations and its production.",
+        "pargraphe3": "Graduated from a master I and actually student in  a master II, I did acquire a lot of experience in digital thanks to the différents projects I did work on. I am confident to have assets to support you in your future project.",
+        "pargraphe4": "Maybe you can see that I’m passionate about Japan and its culture.",
         "proverbeP": "(japanese proverb)",
-        "proverbe": "Compassion for others is good for you"
+        "proverbe": "Even monkeys fall from trees"
     },
     "contact": {
         "intro": "An idea ? A project ? You can contact me",
@@ -21,7 +21,15 @@
         "nom": "Name",
         "email": "Email adress",
         "message": "Message",
-        "button": "Send"
+        "button": "Send",
+        "message error": "An error occurred while sending, please try again",
+        "valid": "Message sent ",
+        "nomR" : "Name required ",
+        "emailR": "Email required ",
+        "emailV": "Valid email address ",
+        "messageR": "Message required ",
+        "accept": "By submitting this form, I accept that the information entered will be used as part of the contact request and the commercial relationship that may result from it.",
+        "acceptR": "Check * required"
     },
     "home": {
         "name": "Lena Clavier",
@@ -34,29 +42,32 @@
     "competences": {
         "titre": "Skills"
     },
-    "projects": [{
-            "name": "This & That",
-            "role": "Full stack developer",
-            "description": "Blog with lifestyle, travel, beauty and food articles"
-        },
+    "projects": [
         {
-            "name": "Chiropractic practice",
-            "role": "Full stack developer",
-            "description": "howcase site for a chiropractic practice"
-        },
-        {
-            "name": "Helfe",
+            "name": "Resonance",
             "role": "Front-end developer",
-            "description": "Landing of the Helfe application"
+            "description": "Association which aims to integrate psychic disabled people in business."
         },
         {
             "name": "Nyl",
             "role": "Full stack developer",
             "description": "The one and only intelligent vinyl library"
-        },{
-            "name": "Resonance",
+        },
+        {
+            "name": "Helfe",
             "role": "Front-end developer",
-            "description": "Association which aims to integrate psychic handicapped people in business."
+            "description": "Landing of the Helfe application"
+        }
+        ,
+        {
+            "name": "Chiropractic practice",
+            "role": "Full stack developer",
+            "description": "Howcase site for a chiropractic practice"
+        },
+        {
+            "name": "This & That",
+            "role": "Full stack developer",
+            "description": "Blog with lifestyle, travel, beauty and food articles"
         }
     ],
     "skills": [{
@@ -69,11 +80,11 @@
     },
     {
         "name": "Communication",
-        "description": "You want to promote your website ! I can assist you in creating communication elements, whether newsletters, banners or visuals for social networks."
+        "description": "You want to promote your website ! I can assist you in creating communication elements, whether is  newsletters, banners or visuals for social networks."
     },
     {
         "name": "UX/UI design",
-        "description": "You want a graphic identity that represents you! I help you with the creation of logos, graphic charters and web interfaces using various tools."
+        "description": "You want a graphic identity that represents you! I will help you with the creation of logos, graphic charters and web interfaces using various tools."
     }
 ]
 }

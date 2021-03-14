@@ -13,7 +13,7 @@
         "pargraphe3": "Étant diplômé d'un master I et en cours de formation d'un master II, les différents projets sur lesquels j’ai pu travailler m'ont permis d'acquérir de l'expérience dans le domaine. Je suis convaincue d’avoir les atouts nécessaires pour vous accompagner dans vos futurs projets.",
         "pargraphe4": "Vous avez pu le constater, je suis aussi une personne passionnée par le Japon et sa culture.",
         "proverbeP": "(proverbe japonais)",
-        "proverbe": "La compassion portée aux autres est un bienfait pour soi"
+        "proverbe": "L'erreur est humaine"
     },
     "contact": {
         "intro": "Une idée ? Un projet ? N'hésitez pas à me contacter",
@@ -21,7 +21,15 @@
         "nom": "Nom",
         "email": "Adresse email",
         "message": "Message",
-        "button": "Envoyer"
+        "button": "Envoyer",
+        "messageError": "Une erreur c'est produite lors de l'envoi, veuillez ressayer",
+        "valid": "Message envoyé",
+        "nomR" : "Nom requis",
+        "emailR": "Email requis",
+        "emailV": "Adresse email valide",
+        "messageR": "Message requis",
+        "accept": "En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler.",
+        "acceptR": "Cocher * requis"
     },
     "home": {
         "name": "Léna Clavier",
@@ -36,15 +44,17 @@
     "competences": {
         "titre": "Compétences"
     },
-    "projects": [{
-            "name": "This & That",
-            "role": "Developer full stack",
-            "description": "Blog avec des articles de lifestyle, voyage, beauté et nourriture"
-        },
+    "projects": [
         {
-            "name": "Cabinet chiropractique",
+            "name": "Resonance",
+            "role": "Developer front-end",
+            "description": "Association qui a pour but l'insertion des handicapés psychiques en entreprise."
+        }
+        ,
+        {
+            "name": "Nyl",
             "role": "Developer full stack",
-            "description": "Site vitrine pour un cabinet chiropratique"
+            "description": "La seule et l’unique bibliothèque de vinyle intelligente"
         },
         {
             "name": "Helfe",
@@ -52,13 +62,14 @@
             "description": "Landing de l'application Helfe"
         },
         {
-            "name": "Nyl",
+            "name": "Cabinet chiropractique",
             "role": "Developer full stack",
-            "description": "La seule et l’unique bibliothèque de vinyle intelligente"
-        },{
-            "name": "Resonance",
-            "role": "Developer front-end",
-            "description": "Association qui a pour but l'insertion des handipés psychiques en entreprise."
+            "description": "Site vitrine pour un cabinet chiropratique"
+        },
+        {
+            "name": "This & That",
+            "role": "Developer full stack",
+            "description": "Blog avec des articles de lifestyle, voyage, beauté et nourriture"
         }
     ],
     "skills": [{

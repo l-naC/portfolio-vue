@@ -23,7 +23,7 @@ export default {
     },
     data() {
         return {
-            projectsData: portfolioData.projects,
+            projectsData: portfolioData.projects.reverse(),
             currentPage: 1,
         }
     },

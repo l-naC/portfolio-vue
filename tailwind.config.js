@@ -12,8 +12,9 @@ module.exports = {
       'secondary': '#ffed4a',
       'danger': '#e3342f',
       'bluenight': '#32577a',
-      'yellowstars': '#e5c04f',
-      'redjapan': '#B50505'
+      'yellowhover': '#e5c04f',
+      'redjapan': '#B50505',
+      'yellowstars': '#FDCA40'
      }),
     backgroundColor: theme => ({
      ...theme('colors'),
@@ -21,8 +22,9 @@ module.exports = {
      'secondary': '#ffed4a',
      'danger': '#e3342f',
      'bluenight': '#32577a',
-     'yellowstars': '#e5c04f',
-     'redjapan': '#B50505'
+     'yellowhover': '#e5c04f',
+     'redjapan': '#B50505',
+     'yellowstars': '#FDCA40'
     })
   },
   variants: {

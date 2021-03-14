@@ -7,7 +7,7 @@
             <h1 class="my-3 text-center text-sm md:text-base lg:text-base">{{ $t("contact.intro") }}</h1>
             <p class="text-xs" v-if="errors.length">
                 <b>{{ $t("contact.error") }}</b>
-                <ul class="flex">
+                <ul class="flex" id="error_contact">
                     <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
                 </ul>
             </p>
@@ -17,12 +17,12 @@
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6">
                                 <label for="name" class="block text-sm font-medium text-gray-700">{{ $t("contact.nom") }}</label>
-                                <input type="text" id="name" name="name" v-model="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md">
+                                <input required type="text" id="name" name="name" v-model="name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md">
                             </div>
 
                             <div class="col-span-6">
                                 <label for="email_address" class="block text-sm font-medium text-gray-700">{{ $t("contact.email") }}</label>
-                                <input type="text" id="email_address" name="email" v-model="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md" placeholder="you@example.com">
+                                <input required type="text" id="email_address" name="email" v-model="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm bg-gray-100 rounded-md" placeholder="you@example.com">
                             </div>
 
                             <div class="col-span-6">
@@ -30,14 +30,18 @@
                                     {{ $t("contact.message") }}
                                 </label>
                                 <div class="mt-1">
-                                    <textarea id="message" name="message" v-model="message" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm bg-gray-100 rounded-md"></textarea>
+                                    <textarea required id="message" name="message" v-model="message" rows="3" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm bg-gray-100 rounded-md"></textarea>
                                 </div>
+                            </div>
+                            <div class="col-span-6">
+                                <input type="checkbox" id="accept" name="accept" required v-model="accept">
+                                <label class="text-xs ml-2" for="accept">*{{ $t("contact.accept") }}</label>
                             </div>
                         </div>
                     </div>
                     <p class="text-xs text-center font-thin" :class="healthStyle">{{ alert }}</p>
                     <div class="p-1 md:px-2 md:py-2 lg:px-2 lg:py-2 text-right sm:px-6" id="button">
-                        <button type="submit" class="inline-flex justify-center border border-transparent shadow-sm font-medium bg-black hover:bg-gray-500 rounded-full py-1 px-3 md:px-6 lg:px-6 mr-3 mr-3 mb-3 mb-3 md:mr-3 lg:mr-3 md:mb-3 lg:mb-3 text-xs md:text-sm lg:text-sm text-white focus:outline-none">
+                        <button type="submit" class="inline-flex justify-center border border-transparent shadow-sm font-medium bg-yellowstars hover:bg-yellowhover rounded-full py-1 px-3 md:px-6 lg:px-6 mr-3 mr-3 mb-3 mb-3 md:mr-3 lg:mr-3 md:mb-3 lg:mb-3 text-xs md:text-sm lg:text-sm text-white focus:outline-none">
                             {{ $t("contact.button") }}
                         </button>
                     </div>
@@ -59,7 +63,8 @@ export default {
             errors: [],
             name: null,
             email: null,
-            message: null
+            message: null,
+            accept: null
         }
     },
     computed: {
@@ -71,25 +76,29 @@ export default {
         sendEmail(e){
             this.errors = []
             if (!this.name) {
-                this.errors.push("Nom requis ");
+                this.errors.push(this.$i18n.t("contact.nomR"));
             }
             if (!this.email) {
-                this.errors.push('email requis ');
+
+                this.errors.push(this.$i18n.t("contact.emailR"));
             } else if (!this.validEmail(this.email)) {
-                this.errors.push('Adresse email valide ');
+                this.errors.push(this.$i18n.t("contact.emailV"));
             }
             if (!this.message) {
-                this.errors.push("Message requis ");
+                this.errors.push(this.$i18n.t("contact.messageR"));
+            }
+            if (!this.accept) {
+                this.errors.push(this.$i18n.t("contact.acceptR"));
             }
 
             if (!this.errors.length) {
                 emailjs.sendForm('service_sgxq6js', 'template_bqq6t19', e.target, 'user_blU1cjUdykXx9wkYrnQaW')
                     .then((result) => {
-                        this.alert = 'Email envoyé'
+                        this.alert = this.$i18n.t("contact.valid")
                         this.color = 'text-green-700'
                         console.log('SUCCESS!', result.status, result.text)
                     }, (error) => {
-                        this.alert = "Une erreur c'est produite lors de l'envoi, veuillez ressayer"
+                        this.alert = this.$i18n.t("contact.messageError")
                         this.color = 'text-red-700'
                         console.log('FAILED...', error)
                     });
@@ -105,6 +114,8 @@ export default {
 };
 </script>
 
-<style>
-
+<style scoped>
+#error_contact li{
+    @apply mr-2
+}
 </style>

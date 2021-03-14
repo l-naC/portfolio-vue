@@ -12,9 +12,9 @@
                     <br/><br/>
                     {{ $t("intro.pargraphe4") }}
                 </p>
-                <!-- <div class="text-center my-5">
-                    <button class="bg-black hover:bg-gray-500 rounded-full py-3 px-6 text-white">Download my CV</button>
-                </div> -->
+                <div class="text-center my-5">
+                    <a href="mailto:contact@lenaclavier.com" class="border border-transparent shadow-sm font-medium bg-yellowstars hover:bg-yellowhover rounded-full py-1 px-3 md:px-6 lg:px-6 mr-3 mr-3 mb-3 mb-3 mt-3 md:mr-3 lg:mr-3 md:mb-3 lg:mb-3 text-xs md:text-sm lg:text-sm text-white focus:outline-none">Contact me</a>
+                </div>
             </div>
             <div id="image-about" class="flex md:block lg:block justify-center">
                 <img class="w-1/2 md:w-full lg:w-full h-auto" src="../assets/images/torii.webp" alt="torii">
@@ -39,7 +39,7 @@ export default {
     name: "about-view",
     data() {
         return {
-            message: '弘法筆を択ばず'
+            message: '猿も木から落ちる'
         }
     },
     methods: {
@@ -47,7 +47,7 @@ export default {
         this.message = this.$i18n.t("intro.proverbe")
         },    
         mouseleave: function(){
-        this.message = '弘法筆を択ばず'
+        this.message = '猿も木から落ちる'
         }
     }
 }

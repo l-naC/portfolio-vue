@@ -11,7 +11,7 @@
           
 
           <div class="text-center my-5">
-            <a v-bind:href="linkWebsite" class="bg-black hover:bg-gray-500 rounded-full py-3 px-3 md:px-6 lg:px-6 text-xs md:text-sm lg:text-sm text-white">{{ $t("project.button") }}</a>
+            <a v-bind:href="linkWebsite" class="bg-yellowstars hover:bg-yellowhover rounded-full py-3 px-3 md:px-6 lg:px-6 text-xs md:text-sm lg:text-sm text-white">{{ $t("project.button") }}</a>
           </div>
         </div>
     </div>

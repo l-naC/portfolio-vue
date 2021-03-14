@@ -36,17 +36,17 @@
 <script>
 import $ from 'jquery'
 
-$(document).ready(function() {
-  $('#snap-scroll-container').scroll(function() {
-      $('.section').each(function(i) {
-        var scrollDistance = $(window).scrollTop();
-          if ($(this).position().top <= scrollDistance) {
-            $('.nav-round').removeClass('active');
-            $('.nav-round').eq(i).addClass('active');
-          }
-      });
-  }).scroll();
-});
+  $(document).ready(function() {
+    $('#snap-scroll-container').scroll(function() {
+        $('.section').each(function(i) {
+          var scrollDistance = $(window).scrollTop();
+            if ($(this).position().top <= scrollDistance) {
+              $('.nav-round').removeClass('active');
+              $('.nav-round').eq(i).addClass('active');
+            }
+        });
+    }).scroll();
+  });
 
 export default {
   name: "nav-bar",
